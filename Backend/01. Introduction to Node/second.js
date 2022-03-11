@@ -10,5 +10,10 @@ function secondName(){
 //Default export: 
 module.exports = secondName;
 
-//
-module.exports = {secondName,otherFunction};
+// Export both function
+//Method 1
+//In ES6 if key and value is same we can skip value
+// module.exports = {secondName,otherFunction};
+
+//Method 2
+// module.exports = {secondName:secondName,otherFunction:secondName};
