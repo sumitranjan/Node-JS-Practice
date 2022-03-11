@@ -9,3 +9,6 @@ function secondName(){
 
 //Default export: 
 module.exports = secondName;
+
+//
+module.exports = {secondName,otherFunction};

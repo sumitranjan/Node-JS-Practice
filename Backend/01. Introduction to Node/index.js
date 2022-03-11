@@ -32,6 +32,10 @@ console.log(second)// o/p: function
 
 console.log(second())//undefined: nothing is returing from function
 
+// Import 2 function from second.js
+// second.otherFunction();
+// second.secondName()
+
 
 // ./second    : file is in current folder
 // ../second   : comeout one level
