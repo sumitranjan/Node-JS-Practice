@@ -189,13 +189,6 @@ app.delete("/fixed",async (req, res) => {
 })
 
 
-
-
-
-
-
-
-
 app.listen(5000,async()=>{
     try{
         await connect()
