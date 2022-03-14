@@ -7,7 +7,7 @@ const connect = ()=>{
     return mongoose.connect("mongodb://127.0.0.1:27017/bank")
 }
 // user schema
-//step1: Creat User SCHEMA
+//step1: Create User schema
 
 const userSchema = new mongoose.Schema(
     {
@@ -26,10 +26,10 @@ const userSchema = new mongoose.Schema(
     }
     )
 
-// Creating the Model 
+//step2: Create the Model 
 const User = mongoose.model("user",userSchema)
 
-//BranchDetail Schema
+//step1: Craete BranchDetail Schema
 const branchDetailSchema = new mongoose.Schema(
     {
         name:{type:String,required:true},
@@ -42,11 +42,10 @@ const branchDetailSchema = new mongoose.Schema(
         timestamps:true,
     }
 )
-//Model
+//step2: Create the Model 
 const Branch = mongoose.model("branch",branchDetailSchema)
 
-//Master Account
-
+//step1: Create Master Account
 const masterAccountSchema  = new mongoose.Schema(
     {
         balance:{type:Number,required:true},
@@ -57,11 +56,10 @@ const masterAccountSchema  = new mongoose.Schema(
         timestamps:true,
     }
 )
-
+//step2: Create the Model 
 const Master = mongoose.model("master",masterAccountSchema)
 
-//Saving Account
-
+//Step 1: Create Saving Account
 const savingsAccountSchema = new mongoose.Schema(
     {
         account_no:{type:Number,required:true,unique:true},
@@ -74,11 +72,11 @@ const savingsAccountSchema = new mongoose.Schema(
         timestamps:true,
     }
 )
-
+//step2: Create the Model 
 const Saving = mongoose.model("saving",savingsAccountSchema)
 
-// Fixed Account 
 
+//Step1: create Fixed Account 
 const fixedAccountSchema = new mongoose.Schema(
     {
         account_no:{type:Number,required:true,unique:true},
@@ -93,7 +91,7 @@ const fixedAccountSchema = new mongoose.Schema(
         timestamps:true,
     }
 )
-
+//step2: Create the Model 
 const Fixed = mongoose.model("fixed",fixedAccountSchema)
 
 // CRUDS 
