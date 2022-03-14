@@ -6,8 +6,8 @@ app.use(express.json());
 const connect = ()=>{
     return mongoose.connect("mongodb://127.0.0.1:27017/bank")
 }
-// USER SCHEMA
-//Creating User SCHEMA
+// user schema
+//step1: Creat User SCHEMA
 
 const userSchema = new mongoose.Schema(
     {
@@ -30,7 +30,6 @@ const userSchema = new mongoose.Schema(
 const User = mongoose.model("user",userSchema)
 
 //BranchDetail Schema
-
 const branchDetailSchema = new mongoose.Schema(
     {
         name:{type:String,required:true},
@@ -44,12 +43,11 @@ const branchDetailSchema = new mongoose.Schema(
     }
 )
 //Model
-
 const Branch = mongoose.model("branch",branchDetailSchema)
 
 //Master Account
 
-const masterAccSchema = new mongoose.Schema(
+const masterAccountSchema  = new mongoose.Schema(
     {
         balance:{type:Number,required:true},
         userId:{type:mongoose.Schema.Types.ObjectId,ref:"user",required:true}
@@ -60,11 +58,11 @@ const masterAccSchema = new mongoose.Schema(
     }
 )
 
-const Master = mongoose.model("master",masterAccSchema)
+const Master = mongoose.model("master",masterAccountSchema)
 
 //Saving Account
 
-const savingAccSchema = new mongoose.Schema(
+const savingsAccountSchema = new mongoose.Schema(
     {
         account_no:{type:Number,required:true,unique:true},
         balance:{type:Number,required:true},
@@ -77,11 +75,11 @@ const savingAccSchema = new mongoose.Schema(
     }
 )
 
-const Saving = mongoose.model("saving",savingAccSchema)
+const Saving = mongoose.model("saving",savingsAccountSchema)
 
 // Fixed Account 
 
-const fixedAccSchema = new mongoose.Schema(
+const fixedAccountSchema = new mongoose.Schema(
     {
         account_no:{type:Number,required:true,unique:true},
         balance:{type:Number,required:true},
@@ -96,7 +94,7 @@ const fixedAccSchema = new mongoose.Schema(
     }
 )
 
-const Fixed = mongoose.model("fixed",fixedAccSchema)
+const Fixed = mongoose.model("fixed",fixedAccountSchema)
 
 // CRUDS 
 
