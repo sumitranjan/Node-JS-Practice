@@ -1,6 +1,5 @@
 const mongoose = require("mongoose");
 
-
 // COMMENT Schema
 // Step 1 :- create the schema
 const commentSchema = new mongoose.Schema(

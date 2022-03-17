@@ -1,6 +1,6 @@
 const express = require("express");
 
-const usersController = require("./controllers/user.controller");
+const usersController = require("./controllers/user.controllers");
 const postsController = require("./controllers/post.controllers");
 const commentsController = require("./controllers/comment.controllers");
 
@@ -14,7 +14,7 @@ const app = express();
 app.use(express.json()); //json dont
 
 
-app.use("/users",usersController);
+app.use("/users",usersController);// /users/abcd/fkhsdkfh/fkhsdk
 app.use("/posts",postsController);
 app.use("/comments",commentsController);
 
