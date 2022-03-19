@@ -13,21 +13,26 @@
     json like {bookName: req.name}.
 */
 
-const express = require("express");
+const express = require('express');
 
 const app = express();
 
-app.use(allBooks);
+app.use(logger)
 
-app.get("/books",allBooks,(req,res) =>{
-    
-    return res.send("")
+app.get("/books", (req, res) => {
+    res.send("Hello")
+});
+
+function logger(req, res,next) {
+console.log("Before Initialization")
+next();
+}
+
+app.get("/books/:name", (req, res) => {
+    req.name = req.params.name;
+    res.send({bookName:req.name})
 })
 
-function allBooks(req,res,next){
-    console.log("Fetching all books");
-  next();
-}
-app.listen(5000, () => {
-    console.log("listening on port");
-}) 
+app.listen("5100",()=>{
+    console.log("Listning to port 5100")
+})
