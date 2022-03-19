@@ -1,0 +1,51 @@
+
+
+use assignment
+
+db.createCollection('users')
+
+show dbs
+
+db.users.insert({"first_name":"Krunal","last_name":"Borhade","email":"krunalborhade@yahoo.in","gender":"Male","ip_address":"168.192.162","age":"24"})  
+
+ db.users.find({})
+
+ db.users.insert({"first_name":"Raj","last_name":"Thite","email":"raj@gmail.com","gender":"Male","ip_address":"192.168.0.1","age":"18"})
+
+  db.users.insert({"first_name":"Vedant","last_name":"Thite","email":"vedant@gamil.com","gender":"Male","ip_address":"192.168.25.1","age":20})
+
+   db.users.insert({"first_name":"Tejas","last_name":"Dere","email":"tejas@gmail.com","gender":"Male","ip_address":"192.168.30.25","age":21})
+
+   db.users.insertMany([{"first_name":"Tanmay","last_name":"Masalkar","email":"tanmay@gmail.com","gender":"Male","ip_address":"12.168.14.32",age:18},{"first_name":"Kartik","last_name":"Thite","email":"kartik@gmail.com","gender":"Male","ip_address":"198.1522.320.01","age":20},{"first_name":"Sumit","last_name":"Pansare","email":"sumit@gmaail.com","gender":"Male","ip_address":"195.365.20.1","age":25},{"first_name":"Sachin","last_name":"kamthe","email":"sachin@gmail.com","gender":"Male","ip_address":"185.325.652.3","age":26}])
+
+    db.users.insertMany([{"first_name":"Abhi","last_name":"Masalkar","email":"abhi@gmail.com","gender":"Male","ip_address":"125.168.0.12","age":20},{"first_name":"Ashok","last_name":"Borhade","email":"ashok@gmail.com","gender":"Male","ip_address":"198.235.025.1","age":28}])
+
+    db.users.find({})
+
+    db.users.find({}).pretty()
+
+    db.users.find({"age":20}).pretty()
+
+    db.users.find({"last_name":"Thite"}).pretty()
+
+    db.users.findOne({"last_name":"Thite"})
+
+    db.users.update({"first_name":"Kartik"},{$set:{"age":15}})
+
+    db.users.updateMany({"last_name":"Masalkar"},{$set:{"ip_address":"192.111.0.1"}})
+    { "acknowledged" : true, "matchedCount" : 2, "modifiedCount" : 2 }
+
+    db.users.updateMany({"last_name":"Borhade"},{$set:{"city":"Thane"}})
+    { "acknowledged" : true, "matchedCount" : 2, "modifiedCount" : 2 }  
+
+    db.users.remove({"last_name":"Masalkar"})
+    WriteResult({ "nRemoved" : 2 })
+
+    db.users.remove({"last_name":"Thite"},1)
+    WriteResult({ "nRemoved" : 1 })
+
+    db.users.remove({"_id":ObjectId("62265a94cb8922b31f225a8a")})
+    WriteResult({ "nRemoved" : 1 })
+
+     db.dropDatabase()
+    { "ok" : 1 }
