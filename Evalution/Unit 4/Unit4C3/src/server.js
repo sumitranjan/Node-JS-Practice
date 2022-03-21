@@ -1,13 +1,13 @@
-const connect = require('./configs/db');
+const connect = require('./configs/db')
 
-const app = require("./index");
+const app = require("./index")
 
-app.listen(5000,async(req,res) =>{
-    try {
-        await connect;
-    } catch (error) {
-        res.status(500).send({message: error.message});
+app.listen(5000, async (req, res) =>{
+    try{
+        await connect
     }
-
-    console.log("Listening to posrt 5000")
+    catch(err){
+        res.status(500).send({message: err.message});
+    }
+    console.log("Listening to port 5000")
 })
