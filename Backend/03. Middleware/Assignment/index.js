@@ -12,27 +12,33 @@
     request like req.name = req.params.name and then in the route handler you need to return 
     json like {bookName: req.name}.
 */
-
-const express = require('express');
+const express= require("express");
+const req = require("express/lib/request");
 
 const app = express();
 
-app.use(logger)
+// app.use(allBooks);
 
-app.get("/books", (req, res) => {
-    res.send("Hello")
-});
+app.get("/books", allBooks,(req, res) => {
+    console.log("Boooks route")
+    res.send("hello");
+})
 
-function logger(req, res,next) {
-console.log("Before Initialization")
-next();
+function allBooks(req, res, next){
+    console.log("Fetching all books");
+    next();
 }
 
-app.get("/books/:name", (req, res) => {
+app.get("/books/:name",singleBook , (req, res)=>{
     req.name = req.params.name;
     res.send({bookName:req.name})
 })
 
-app.listen("5100",()=>{
-    console.log("Listning to port 5100")
+function singleBook(req, res, next){
+    req.name = req.params.name;
+    next();
+}
+
+app.listen(5000, ()=>{
+    console.log("Listening on port 5000");
 })
