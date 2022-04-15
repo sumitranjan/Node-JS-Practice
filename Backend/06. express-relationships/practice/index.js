@@ -111,7 +111,7 @@ app.get("/users/:id", async (req, res) => {
   try {
     // console.log(req.params)
     const user = await User.findById(req.params.id).lean().exec();
-    // db.users.update({_id: Object('6231a06cc4ca0386282c5349')}, {$set: {req.body}})
+    // db.users.update({_id: Object('6231a06cc4ca0386282c5349')})
 
     return res.status(200).send({ user: user });
   } catch (error) {
@@ -137,6 +137,7 @@ app.patch("/users/:id", async (req, res) => {
 app.delete("/users/:id", async (req, res) => {
   try {
     const user = await User.findByIdAndDelete(req.params.id);
+        // db.users.delateOne({_id: Object('6231a06cc4ca0386282c5349')})
 
     return res.status(200).send(user);
   } catch (error) {
