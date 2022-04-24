@@ -1,4 +1,11 @@
-function sum(a,b){
-    return a+b;
+function sum(a, b) {
+    console.log("stuff");
+  return a + b ;
 }
-module.exports = sum;
+
+function mul(a, b) {
+
+  return a * b ;
+}
+
+export { sum , mul};
