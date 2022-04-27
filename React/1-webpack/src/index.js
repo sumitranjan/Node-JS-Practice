@@ -1,5 +1,4 @@
 
-
 import { sum , mul} from "./cal";
 // const sum= require("./cal")
 import "./index.css"

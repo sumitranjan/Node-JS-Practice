@@ -1,0 +1,8 @@
+.redtext{
+    color: tomato;
+    text-decoration: underline;
+}
+
+.border{
+    border: 1px solid green;
+}
