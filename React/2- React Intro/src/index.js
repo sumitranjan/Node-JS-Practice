@@ -45,7 +45,7 @@ const div = React.createElement("div", { className: "border" }, "Hello Div");
 const img = React.createElement("img", {
   width: "400px",
   height: "400px",
-  src: "https://images.pexels.com/photos/302743/pexels-photo-302743.jpeg",
+  src: "https://d33wubrfki0l68.cloudfront.net/d74da08f08b4a17c368b58d36ee23c368b4a6819/fff62/img/homepage/phones.png",
 });
 
 const toShow = true;
