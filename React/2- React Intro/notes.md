@@ -18,3 +18,5 @@ react 17.0.2 => version
 
 //need these dependencies
 npm install @babel/core @babel/node @babel/preset-env @babel/preset-react babel-loader
+
+
