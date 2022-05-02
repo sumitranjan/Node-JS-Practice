@@ -52,8 +52,9 @@ import './App.css';
 
 
 //siblings : child1-->parent-->child2
+//child 1 & child 2 dont't know about each other.
 function App() {
-const [message, setMessage] = useState("Hello c1");
+  const [message, setMessage] = useState(""); //states
 
   const getData = (data) =>{
     console.log("Got Data from child : ",data);  
@@ -61,16 +62,29 @@ const [message, setMessage] = useState("Hello c1");
   }
   return (
     <div className="App">
-      <First dataFn ={getData}/>
-      <Second message ={message}/>
+      <First dataFn = {getData}/>
+      <Second message = {message}/> 
+      {/* second component will re-render */}
     </div>
   );
 }
 
 function First({dataFn}){ 
  const data = "Hello c1";
- dataFn(data);
-  return <div>First Child</div>
+ 
+  return(
+    <div>
+      First Child
+      <button
+        onClick={()=>{
+          dataFn(data);
+        }}
+        >
+        Send data
+      </button>
+      </div>
+    
+  ) 
 }
 
 function Second({message}){
