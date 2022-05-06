@@ -1,0 +1,86 @@
+{
+  "todos": [
+    {
+      "id": 1,
+      "title": "Learn React"
+    },
+    {
+      "id": 2,
+      "title": "Learn Typescript"
+    },
+    {
+      "id": 3,
+      "title": "Learn vu"
+    },
+    {
+      "title": "go for walk",
+      "status": false,
+      "id": 4
+    },
+    {
+      "title": "sleep",
+      "status": false,
+      "id": 5
+    },
+    {
+      "title": "running",
+      "status": false,
+      "id": 6
+    },
+    {
+      "title": "learn java",
+      "status": false,
+      "id": 7
+    },
+    {
+      "title": "get placed",
+      "status": false,
+      "id": 8
+    },
+    {
+      "title": "goa",
+      "status": false,
+      "id": 9
+    },
+    {
+      "title": "laern angular",
+      "status": false,
+      "id": 10
+    },
+    {
+      "title": "have Tea",
+      "status": false,
+      "id": 11
+    },
+    {
+      "title": "Learn DSA",
+      "status": false,
+      "id": 12
+    },
+    {
+      "title": "Play Cricket",
+      "status": false,
+      "id": 13
+    },
+    {
+      "title": "Swimming",
+      "status": false,
+      "id": 14
+    },
+    {
+      "title": "Swimming",
+      "status": false,
+      "id": 15
+    },
+    {
+      "title": "Read Books",
+      "status": false,
+      "id": 16
+    },
+    {
+      "title": "Hello",
+      "status": false,
+      "id": 17
+    }
+  ]
+}

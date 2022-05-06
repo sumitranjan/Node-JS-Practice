@@ -4,15 +4,33 @@ export const Todos = () => {
   const [todos, setTodos] = useState([]);
   const [text, setText] = useState("");
   const [loading, setLoading] = useState(true);
+  const [page, setPage] = useState(1);
 
   useEffect(() => {
+    console.log("Mounted Todos");
     getData();
-  }, []);
 
+    //Curried function
+    //unmounting
+    return () => {
+      //Closure
+      //called after component is unmounted
+      console.log("Unmounted Todos done");
+    };
+    // //Same as above arow function
+    // //Curried function
+    //  return function cleanup() {
+    //   //Closure
+    //   //called after component is unmounted
+    //   console.log("Unmounted Todos done");
+    // };
+  }, [page]);
+
+  //Pagination(Updating)
   const getData = async () => {
-    const data = await fetch("http://localhost:8080/todos").then((d) =>
-      d.json()
-    );
+    const data = await fetch(
+      `http://localhost:8080/todos?_page=${page}&_limit=3`
+    ).then((d) => d.json());
     setTodos(data);
     setLoading(false);
   };
@@ -48,8 +66,27 @@ export const Todos = () => {
         Add todo
       </button>
       {todos.map((t) => (
-        <div>{t.title}</div>
+        <div>
+          {t.id}.{t.title}
+        </div>
       ))}
+
+      <button onClick={() => setPage(page - 1)}>Prev</button>
+      <button onClick={() => setPage(page + 1)}>Next</button>
     </div>
   );
 };
+
+
+//explanation
+// function useeffect2(callbackfun, deps){
+//   const ret = callbackfun();
+
+//   if(unmounted){
+//     ret();
+//   }
+// }
+
+// useeffect2(function mount () {
+//   return function unmount() {};
+// });
