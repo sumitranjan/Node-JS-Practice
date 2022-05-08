@@ -1,16 +1,20 @@
 import "./App.css";
 
 function App() {
+  const data = [
+    {
+      heading : "Phones",
+      items: ["Samsung", "HTC","Mictomax", "Apple"]
+    },
+    {
+      heading : "OS",
+      items: ["Android", "Blackberry","iPhone", "Windows Phone"]
+    }
+  ]
+
   return (
     <>
-      <h1>Mobile Operating System</h1>
-      <ul>
-        <li>Android</li>
-        <li>Blackberry</li>
-        <li>iPhone</li>
-        <li>Windows Phone</li>
-      </ul>
-
+  
       <h1>Mobile Manufacturers</h1>
       <ul>
         <li>Samsung</li>
