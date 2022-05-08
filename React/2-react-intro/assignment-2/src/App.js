@@ -1,4 +1,3 @@
-import logo from "./logo.svg";
 import "./App.css";
 
 function App() {
@@ -6,7 +5,7 @@ function App() {
   return (
     <div className="App">
       <Logo />
-      <div>
+      <div className="links">
       {links.map((e) => {
           return <Link link={e} />;
         })}
@@ -19,7 +18,7 @@ function App() {
 
 //Component
 function Logo() {
-  return <p>LOGOBAKERY</p>;
+  return <p className="logo">LOGOBAKERY</p>;
 }
 
 function Link(props) {
@@ -27,7 +26,7 @@ function Link(props) {
 }
 
 function Contact() {
-  return <button>Contacts</button>;
+  return <button className="btn">Contacts</button>;
 }
 
 export default App;

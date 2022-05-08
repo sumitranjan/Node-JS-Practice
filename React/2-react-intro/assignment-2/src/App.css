@@ -36,3 +36,28 @@
     transform: rotate(360deg);
   }
 }
+
+.App {
+  display: flex;
+  justify-content: space-around;
+  background-color: black;
+}
+.links{
+  display: flex;
+}
+.links,p{
+  margin-right: 10px;
+  color: white;
+}
+.logo{
+  color: white;
+}
+
+.btn{
+  color: white;
+  background-color: #61dafb;
+  border-radius: 10%;
+  width:110px;
+  height: 35px;
+  margin-top: 10px;
+}

@@ -7,6 +7,6 @@ npm run build
 //IIFE
 // Imediately Invoked Function Expression
 
-mode: "production" => it will optimize the bundle/sorce file created
-mode: "development" =>it not optimize the bundle/sorce file created ,
+mode: "production" => it will optimize the bundle/source file created
+mode: "development" =>it not optimize the bundle/source file created ,
                     it will be slow as more number of line of line code will be present
