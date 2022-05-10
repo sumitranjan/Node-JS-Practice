@@ -80,14 +80,18 @@ import { useEffect, useState } from "react";
 
 //   useEffect(() => {
 //     console.log("Inside effect 2");
-//   }, [age]); // only when age changes
+//   }, [age]); // call only when age changes
+
+// useEffect(() => {
+  //     console.log("Inside effect 2");
+  //   }, [age, counter]); // call when any one changes
 
 //   // useEffect(() => {
-//   //   console.log("Inside effect 1");
+//   //   console.log("Inside effect 2");
 //   // },[counter])
 
-//   //UseEffect executes at least once!
 
+//   //UseEffect executes at least once!
 //   return (
 //     <div className="App">
 //       <h3>Counter: {counter}</h3>
