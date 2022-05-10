@@ -35,6 +35,8 @@ import { useEffect, useState } from "react";
 //   );
 // }
 
+
+//////////////////////////////////////////////////////////////////
 // function App() {
 //   const [todos, setTodos] = useState([]);
 
@@ -58,6 +60,8 @@ import { useEffect, useState } from "react";
 //   );
 // }
 
+
+/////////////////////////////////////////////////////////////////
 // //Counter
 // function App() {
 //   const [counter, setCounter] = useState(0);
@@ -67,7 +71,7 @@ import { useEffect, useState } from "react";
 //   //1. empty useEffect => just call back function
 //   useEffect(() => {
 //     console.log("Inside effect 1");
-//   }); //not giving array? every single time.
+//   }); //not giving array?  call every single time.
 
 //   //2. All UseEffect is called when it is called from mounted
 //   useEffect(() => {
@@ -104,6 +108,8 @@ import { useEffect, useState } from "react";
 //     </div>
 //   );
 // }
+
+/////////////////////////////////////////////////////////
 
 // function App() {
 //   const [counter, setCounter] = useState(0);
@@ -178,3 +184,17 @@ export default App;
 //json-server db.json --port 8080
 //json-server db.json --port 8080 --watch
 //--watch will automatically run the server every time there is change in code
+
+
+
+
+//npm create vite
+//go to react than react
+//open project in code
+//npm i
+//npm run dev
+
+
+//create-ract-app myapp
+//change react version to 17.0.2
+//npm start
