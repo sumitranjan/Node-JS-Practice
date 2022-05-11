@@ -66,7 +66,7 @@ export const Todos = () => {
         Add todo
       </button>
       {todos.map((t) => (
-        <div>
+        <div key={t.id}>
           {t.id}.{t.title}
         </div>
       ))}
@@ -76,7 +76,6 @@ export const Todos = () => {
     </div>
   );
 };
-
 
 //explanation
 // function useeffect2(callbackfun, deps){
