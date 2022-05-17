@@ -22,6 +22,12 @@ A:  It provides us features
         Learn Once, Write Aywhere
         fast and re-usable
 
+
+Two way to write code:
+Imperative  -> function x(a, b){return a+b}   --> We have to know how function is executed
+Declarative -> function add2Number(a,b){return a+b} --> We don't have to know how function is executed
+
+
 Q: What is JSX
 A: HTML/XML code inside JS code.
 
@@ -29,11 +35,29 @@ Q: What is componets.
 A: a JS function that returns HTML/XML code
 
 Q: What is Virtual DOM
-A:
-        
-Two way to write code:
-Imperative  -> function x(a, b){return a+b}   --> We have to know how function is executed
-Declarative -> function add2Number(a,b){return a+b} --> We don't have to know how function is executed
+A: Shallow copy of our actual dom
+
+   compare and only update what need to ne updated
+
+// original dom
+<div> Hello </div>
+
+//change
+<div> Hello Ritesh</div>
+
+//vdom
+<div> Hello </div>
+
+div text : Hello
+
+//change 
+<div> Hello Ritesh</div> 
+
+change div text to hello, Ritesh
+
+Q: Hooks
+A: []
+
 
 -------------------------------------------------------------------------------------------------------
 
