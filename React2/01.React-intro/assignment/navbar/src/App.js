@@ -12,7 +12,7 @@ function App() {
         <Logo />
         <div className="link-bar">
           {links.map((link) => (
-            <div>
+            <div key={link}>
               <Links value={link} />
             </div>
           ))}
