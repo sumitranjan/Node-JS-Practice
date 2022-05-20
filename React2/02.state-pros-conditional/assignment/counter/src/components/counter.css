@@ -1,0 +1,34 @@
+.oddCount{
+    color: red;
+}
+
+.evenCount{
+    color: green;
+}
+
+.addBtn{
+    margin-right:10px;
+    font-size:20px;
+  }
+  .addBtn:hover{
+    color:green;
+    padding:5px;
+    cursor: pointer;
+  }
+  .subBtn{
+    margin-right:10px;
+    font-size:20px;
+  }
+  .subBtn:hover{
+    color:red;
+    padding:5px;
+    cursor: pointer;
+  }
+  .doubBtn{
+    font-size:20px;
+  }
+  .doubBtn:hover{
+    color:blue;
+    padding:5px;
+    cursor: pointer;
+  }
