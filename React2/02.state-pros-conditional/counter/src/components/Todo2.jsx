@@ -1,19 +1,17 @@
 import React, { useState } from "react";
-import TodoItem from "./TodoItem";
+import styles from"./todo.module.css"
 
-const Todo = () => {
+const Todo2 = () => {
   const [value, setValue] = useState("");
   const [todos, setTodos] = useState([]);
 
-  const onDelete = (id) => {
-    let newTodos = todos.filter((todo) => todo.id != id);
-    setTodos(newTodos);
-  };
+  //   const handleChange = (e) => {
+  //     setValue(e.target.value);
+  //   };
   return (
     <div>
-      Todo
+      Todo2
       <input
-        // value={value}-->pass initial value to input and remove from input
         value={value}
         onChange={(e) => {
           setValue(e.target.value);
@@ -23,21 +21,28 @@ const Todo = () => {
         onClick={() => {
           setTodos([
             ...todos,
-            { id: Date.now(), value: value, isCompleted: false },
+            {
+              id: Date.now(),
+              value: value,
+              isCompleted: false,
+            },
           ]);
           setValue("");
         }}
       >
-        Submit
+        Add
       </button>
-      {/*TODOS*/}
+      {/* {TODOS} */}
       <div>
         {todos.map((todo) => (
-          <TodoItem key={todo.id} todo={todo} onDelete={onDelete} />
+          <div className={styles.todo} key={todo.id}>
+            <input type="checkbox" />
+            <div>{todo.value}</div>
+          </div>
         ))}
       </div>
     </div>
   );
 };
 
-export default Todo;
+export default Todo2;
