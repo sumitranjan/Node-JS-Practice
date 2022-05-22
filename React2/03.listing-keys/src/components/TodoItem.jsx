@@ -1,9 +1,12 @@
-import React from 'react'
+import React from "react";
 
-const TodoItem = () => {
+const TodoItem = ({ value, deleteTodo }) => {
   return (
-    <div>TodoItem</div>
-  )
-}
+      <li>
+        {value}
+        <button onClick={()=>deleteTodo(value)}>delete</button>
+        </li> 
+  );
+};
 
-export default TodoItem
+export default TodoItem;
