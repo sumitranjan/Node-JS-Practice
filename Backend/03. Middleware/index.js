@@ -44,3 +44,8 @@ function logger(req, res, next) {
 app.listen(5000, () => {
   console.log("listening on port 5000");
 });
+
+/*
+  Middleware is something which works before the request reaches the route handler 
+  and also after the response leaves the route handler
+*/
