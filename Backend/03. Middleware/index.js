@@ -2,7 +2,11 @@ const express = require("express");
 
 const app = express();
 
+//logger is middleware
+
 app.use(logger); // logger() logger
+
+//app.use() function automatically call  middleware, no need to call explicitly
 
 app.get("/users", logger, logger, logger, (req, res) => {
   return res.send({ route: "/users", role: req.role });
@@ -38,7 +42,8 @@ function logger(req, res, next) {
     req.role = "somebody";
   }
   console.log("called");
-  next();
+  next(); // next() fun tells that now the middleware code is over
+  //It will take from where middleware is called (i.app.use())
 }
 
 app.listen(5000, () => {
