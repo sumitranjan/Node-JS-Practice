@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <h1>I am heading 1</h1>
+    <h1>I am heading 2</h1>
+    <h1>I am heading 3</h1>
+    <h1>I am heading 4</h1> -->
+    <!-- //Want to do this with JS -->
+    
+</body>
+</html>
+
+<script>
+    // createElement("")
+
+    // document.createElement("h1").textContent="I am heading 1";
+    // document.createElement("h2").textContent="I am heading 2";
+    // document.createElement("h3").textContent="I am heading 3";
+    // document.createElement("h4").textContent="I am heading 4";
+
+    // Need to append to sow in webpage
+
+    var head1= document.createElement("h1");
+    var head2= document.createElement("h2");
+    var head3= document.createElement("h3");
+    var head4= document.createElement("h4");
+
+    head1.innerHTML="I am heading 1";
+    head2.textContent="I am heading 2";
+    head3.textContent="I am heading 3";
+    head4.textContent="I am heading 4";
+    
+    head1.style.color="red";
+
+    document.querySelector("body").append(head1,head2,head3,head4);
+
+    
+    
+
+
+</script>

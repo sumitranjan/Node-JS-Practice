@@ -1,0 +1,59 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Same as 7.HTML</title>
+    <!-- Assignment -->
+    <style>
+        div{
+            width : 286px;
+            border:1px solid grey;
+            padding-bottom:10px;
+        }
+        h4{
+            padding:10px;
+        }
+        p{
+            padding: 0 0 010px;
+            margin-top: -15px;
+        }
+        button{
+            background-color:blue;
+            color:white;
+            border:0;
+            padding:10px;
+            margin-left:10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="container">
+
+    </div>
+</html>
+
+<script>
+   //Reduce writing styles in script
+   
+    var image = document.createElement("img");
+    image.setAttribute("src","https://via.placeholder.com/286x180");
+
+    var head4 = document.createElement("h4");
+    head4.textContent = "Card Title";
+    
+    var para = document.createElement("p");
+    para.textContent="Some quick example text to build on the Card of the card's content"
+
+    var button = document.createElement("button");
+    button.textContent = "Go Somewhere";
+
+
+
+    document.querySelector("#container").append(image, head4, para, button);
+
+</script>

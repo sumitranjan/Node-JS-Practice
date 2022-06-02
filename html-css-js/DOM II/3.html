@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="myForm">
+        <input id="name" type="text" placeholder="enter name">
+        <input id="mobile" type="number" placeholder="Enter number">
+        <!-- <button>Submit</button> -->
+        <input type="submit" value="Login">
+    </form>
+        
+</body>
+</html>
+
+<script>
+    //Without form
+    // document.querySelector("button").addEventListener("click",submitFun);
+
+    // function submitFun(){
+    //     var name = document.getElementById("name").value;
+    //     var mbl = document.querySelector("#mobile").value;
+
+    //     console.log(name, mbl);
+    // }
+
+    
+
+    document.querySelector("#myForm").addEventListener("submit",submitFun);
+    // whenever we are adding an event listner an event object will be created , which
+    //we can access as function paramter
+    //here, submit is an event  
+    function submitFun(){
+        // default behaviour for form is it will refresh on submiting anything
+        // To prevent the value to loss , use event.preventDefault();
+        event.preventDefault();
+        console.log(event);
+
+        var name = document.getElementById("name").value;
+        var mbl = document.querySelector("#mobile").value;
+
+        console.log(name, mbl);
+    }
+    
+    //form is combining all typr of input
+    //inform you cant use button instead we will use input=submit
+    // default behaviour for form is it will refresh on submiting anything
+    
+</script>

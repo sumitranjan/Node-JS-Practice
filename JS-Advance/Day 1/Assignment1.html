@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mini Js datatype App/Assignment</title>
+    <style>
+        button{
+            height: 40px;
+            width: 120px;
+            font-size: 20px;
+            color: white;
+            background-color:Red;
+            border: 0px;
+        }
+    </style>
+</head>
+<body>
+    <button id="object">Object</button>
+    <button id="array">Array</button>
+    <button id ="func">Function</button>
+    <button id="string">Strings</button>
+    <button id="number">Numbers</button>
+    <button id="null">null</button>
+    <button id="undef">undefined</button>
+    <div id="content"></div>
+</body>
+</html>
+
+<script>
+//When user click Object Button , then using  addEventListener() the function is called
+document.querySelector("#object").addEventListener("click",objectFunc);
+    //Object fuction    
+function objectFunc(){
+        document.querySelector("div").textContent=""
+        var h3 = document.createElement("h3");
+        h3.textContent="Object";
+        var ul = document.createElement("ul");
+        var li1 =document.createElement("li");
+        li1.textContent="In JavaScript, an object is an unordered collection of key-value pairs. Each key-value pair is called a property.";
+
+        var li2 =document.createElement("li");
+        li2.textContent="In JavaScript Objects are non-primitive data type"
+
+        var li3 =document.createElement("li");
+        li3.textContent="Object Create: var object={name:sumit}"
+
+        var li4 =document.createElement("li");
+        li4.textContent="In Javascript object are immutable"
+
+        var li5 =document.createElement("li");
+        li5.textContent="To access a property of an object, you use one of two notations: the dot notation and array-like notation."
+
+        ul.append(li1,li2,li3,li4,li5);
+
+        document.querySelector("div").append(h3,ul);
+        
+    }
+//When user click Array Button , then using  addEventListener() the function is called
+    document.querySelector("#array").addEventListener("click",arrayFunc);
+    function arrayFunc(){
+        document.querySelector("div").textContent=""
+        var h3 = document.createElement("h3");
+        h3.textContent="Array";
+        var ul = document.createElement("ul");
+        var li1 =document.createElement("li");
+        li1.textContent="Array is an ordered list of values.";
+
+        var li2 =document.createElement("li");
+        li2.textContent="In Javascript  an array can hold values of mixed types. For example, you can have an array that stores elements with the types number, string, and boolean."
+
+        var li3 =document.createElement("li");
+        li3.textContent="IN Javascript the size of an array is dynamic"
+
+        var li4 =document.createElement("li");
+        li4.textContent="Array create : var arrayname=[value1,value2.....valueN];  "
+
+        var li5 =document.createElement("li");
+        li5.textContent="Using length we can find size of array"
+
+        ul.append(li1,li2,li3,li4,li5);
+
+        document.querySelector("div").append(h3,ul);
+        
+    }
+    //When user click function Button , then using  addEventListener() the function is called
+    document.querySelector("#func").addEventListener("click",func);
+    function func(){
+        document.querySelector("div").textContent=""
+        //using createElement() h3 is created
+        var h3 = document.createElement("h3");
+        h3.textContent="Function";
+        //order list is created & using textContent respective text is added
+        var ul = document.createElement("ul");
+        var li1 =document.createElement("li");
+        li1.textContent="function is a block of code designed to perform a particular task.";
+
+        var li2 =document.createElement("li");
+        li2.textContent="A JavaScript function is defined with the function keyword, followed by a name, followed by parentheses ()."
+
+        var li3 =document.createElement("li");
+        li3.textContent="function name(parameter1, parameter2, parameter3)"
+
+        var li4 =document.createElement("li");
+        li4.textContent="Function nedd to be invoked to work "
+
+        var li5 =document.createElement("li");
+        li5.textContent="Function can return value also"
+
+        //apppend list in UL
+        ul.append(li1,li2,li3,li4,li5);
+        //append h3,h4 to div
+        document.querySelector("div").append(h3,ul);
+        
+    }
+//When user click string Button , then using  addEventListener() the function is called
+    document.querySelector("#string").addEventListener("click",string);
+    function string(){
+        document.querySelector("div").textContent=""
+        //using createElement() h3 is created
+        var h3 = document.createElement("h3");
+        h3.textContent="String";
+        //order list is created & using textContent respective text is added
+        var ul = document.createElement("ul");
+        var li1 =document.createElement("li");
+        li1.textContent="String is a primitive data type";
+
+        var li2 =document.createElement("li");
+        li2.textContent="String is created by : var string='sumit'";
+
+        var li3 =document.createElement("li");
+        li3.textContent="In string index start at 0"
+
+        var li4 =document.createElement("li");
+        li4.textContent="We can find the length of string using string.length"
+
+        var li5 =document.createElement("li");
+        li5.textContent="String is immutable"
+        //apppend list in UL
+        ul.append(li1,li2,li3,li4,li5);
+        //append h3,h4 to div
+        document.querySelector("div").append(h3,ul);
+        
+    }
+//When user click number Button , then using  addEventListener() the function is called
+    document.querySelector("#number").addEventListener("click",number);
+    function number(){
+        document.querySelector("div").textContent=""
+        //using createElement() h3 is created
+        var h3 = document.createElement("h3");
+        h3.textContent="Number";
+        //order list is created & using textContent respective text is added
+        var ul = document.createElement("ul");
+        var li1 =document.createElement("li");
+        li1.textContent="Number is a primitive data type";
+
+        var li2 =document.createElement("li");
+        li2.textContent="JavaScript has only one type of number.";
+
+        var li3 =document.createElement("li");
+        li3.textContent="Numbers can be written with, or without, decimals";
+
+        var li4 =document.createElement("li");
+        li4.textContent="we can perform various operation with numbers like + , - , * , / ";
+        var li5 =document.createElement("li");
+        li5.textContent="Number is immutable"
+        //apppend list in UL
+        ul.append(li1,li2,li3,li4,li5);
+        //append h3,h4 to div
+        document.querySelector("div").append(h3,ul);
+        
+    }
+//When user click null Button , then using  addEventListener() the function is called
+    document.querySelector("#null").addEventListener("click",nullfunc);
+    function nullfunc(){
+        document.querySelector("div").textContent=""
+        //using createElement() h3 is created
+        var h3 = document.createElement("h3");
+        h3.textContent="Null";
+        //order list is created & using textContent respective text is added
+        var ul = document.createElement("ul");
+        var li1 =document.createElement("li");
+        li1.textContent="In javascript null is a primitive type that contains a special value null.";
+
+        var li2 =document.createElement("li");
+        li2.textContent="JavaScript uses the null value to represent the absence of any object value.";
+
+        var li3 =document.createElement("li");
+        li3.textContent="typeof null is object";
+
+        var li4 =document.createElement("li");
+        li4.textContent="In JavaScript null is treated as false values";
+        var li5 =document.createElement("li");
+        li5.textContent="null == undefined --> true";
+        //apppend list in UL
+        ul.append(li1,li2,li3,li4,li5);
+        //append h3,h4 to div
+        document.querySelector("div").append(h3,ul);
+        
+    }
+//When user click undef Button , then using  addEventListener() the function is called
+    document.querySelector("#undef").addEventListener("click",undefFun);
+    function undefFun(){
+        document.querySelector("div").textContent=""
+        //using createElement() h3 is created
+        var h3 = document.createElement("h3");
+        h3.textContent="Undefined";
+        //order list is created & using textContent respective text is added
+        var ul = document.createElement("ul");
+        var li1 =document.createElement("li");
+        li1.textContent="If a variable is declared but the value is not assigned, then the value of that variable will be undefined.";
+
+        var li2 =document.createElement("li");
+        li2.textContent="In JavaScript undefined is treated as false values";
+
+        var li3 =document.createElement("li");
+        li3.textContent="typeof undefined is undefined";
+
+        var li4 =document.createElement("li");
+        li4.textContent="null == undefined --> true"
+       
+        //apppend list in UL
+        ul.append(li1,li2,li3,li4);
+        //append h3,h4 to div
+        document.querySelector("div").append(h3,ul);
+        
+    }
+
+
+</script>

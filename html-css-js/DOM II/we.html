@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button{
+            padding: 5px;
+            margin: 10px;
+            color : white;
+            border:0;
+            font-weight: bold;
+            border-radius: 5px;
+        }
+        /* button:nth-child(1){
+            background-color:blue;
+        }
+        button:nth-child(2){
+            background-color:green;
+        }
+        button:nth-child(3){
+            background-color:red;
+        }
+        button:nth-child(4){
+            background-color:orange;
+        }
+        button:nth-child(5){
+            background-color:grey;
+        }
+        button:nth-child(6){
+            background-color:cyan;
+        } */
+    </style>
+</head>
+<body>
+    <div>
+        <!-- <button>Primary</button>
+        <button>Success</button>
+        <button>Danger</button>
+        <button>Warning</button>
+        <button>Secondary</button>
+        <button>Info</button> -->
+    </div>
+</body>
+</html>
+
+<script>
+    // var btn1 = document.createElement("button");
+    // var btn2 = document.createElement("button");
+    // var btn3 = document.createElement("button");
+    // var btn4 = document.createElement("button");
+    // var btn5 = document.createElement("button");
+    // var btn6 = document.createElement("button");
+
+    // btn1.textContent = "primary";
+    // btn2.textContent = "Success";
+    // btn3.textContent = "Danger";
+    // btn4.textContent = "Warning";
+    // btn5.textContent = "Secondary";
+    // btn6.textContent = "Info";
+
+    // btn1.style.backgroundColor = "blue";
+    // btn2.style.backgroundColor = "green";
+    // btn3.style.backgroundColor = "red";
+    // btn4.style.backgroundColor = "orange";
+    // btn5.style.backgroundColor = "grey";
+    // btn6.style.backgroundColor = "cyan";
+
+    // document.querySelector("body").append(btn1,btn2,btn3,btn4,btn5,btn6)
+
+    //We can reduce the number of lines since code is repeated
+
+    var buttons = [
+        {name : "primary", bgColor: "blue"},
+        {name : "secondary", bgColor: "grey"},
+        {name : "success", bgColor: "green"},
+        {name : "Danger", bgColor: "red"},
+        {name : "Warning", bgColor: "yellow"},
+        {name : "Info", bgColor: "cyan"},
+    ];
+    // console.log(buttons);
+
+    buttons.map(function (elem){
+        var btn = document.createElement("button");
+       // console.log(btn)
+        btn.textContent = elem.name;
+        btn.style.backgroundColor = elem.bgColor;
+        document.querySelector("body").append(btn);
+    })
+
+</script>

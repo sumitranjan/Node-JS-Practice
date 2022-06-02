@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karlo Tickets ( Local Storage )</title>
+    <style>
+
+    </style>
+</head>
+<body>
+    <h1>Karlo Tickets</h1>
+    <select id="filter" onchange="filterCat()">
+        <option value="">Filter by category</option>
+        <option value="refund">Refund</option>
+        <option value="itmMiss">Item Missing</option>
+        <option value="odrStatus">Order Status</option>
+        <option value="delviery">Delivery</option>
+        <option value="feedback">Feedback</option>
+    </select>
+    <select id="sortPrice" onchange="sortPrice()">
+        <option value="">Sort by Ticket No</option>
+        <option value="high">High to Low</option>
+        <option value="low">Low to High</option>
+    </select>
+    <div id="container">
+        <form>
+            <select id="category">
+                <option value="">Select Category</option>
+                <option value="refund">Refund</option>
+                <option value="itmMiss">Item Missing</option>
+                <option value="odrStatus">Order Status</option>
+                <option value="delviery">Delivery</option>
+                <option value="feedback">Feedback</option>
+            </select>
+            <br>
+            <h4>Ticket No:</h4>
+            <h4 id="tkt">0</h4>
+            <textarea name="" id="desc" cols="30" rows="10" placeholder="Enter Issue"></textarea>
+            <br>
+            <input type="date" id="date">
+            <br>
+            <!-- <input type="number" id="ticketNo"> -->
+            <br>
+            <input type="submit" value="submit">
+            
+        </form>
+    </div>
+    <div id ="display">
+        <table>
+            <thead>
+                <tr>
+                    <th>Ticket No</th>
+                    <th>Category</th>
+                    <th></th>
+                    <th>Complain/Issue</th>
+                    <th>Date</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+</body>
+</html>
+
+<script>
+    var r= Math.floor((Math.random()*10)+1);
+    document.querySelector("h5").textContent=r;
+    document.querySelector("form").addEventListener("submit",karlo);
+    var karloArr = JSON.parse(localStorage.getItem("karloItems")) || [];
+    displayTable(karloArr);
+
+    function sortPrice(){
+        var selected = document.querySelector("#sortPrice").value;
+        if(selected=="low"){
+            karloArr.sort(function (a, b){
+                return a.rand - b.rand;
+            });
+        }
+        if(selected=="high"){
+            karloArr.sort(function (a, b){
+                return b.rand - a.rand;
+            });
+        }
+        displayTable(karloArr);
+    }   
+
+    function filterCat(){
+        var selected = document.querySelector("#filter").value;
+        var filteredList = karloArr.filter(function (elem){
+            return elem.cat == selected;
+        });
+        displayTable(filteredList);
+    }
+
+        function karlo(event){
+            event.preventDefault();
+
+            var selected = document.querySelector("#category").value;
+            var desc = document.querySelector("#desc").value;
+            var date = document.querySelector("#date").value;
+            //var ticketNo = document.querySelector("#ticketNo").value;
+            var r = document.querySelector("#h5").value;
+            // var = Math.floor((Math.random()*10)+1);
+
+            console.log(selected, desc,date,rand);
+
+            var karloObj = {
+                cat :selected,
+                desc : desc,
+                date : date,
+                // ticketNo: ticketNo,
+                rand:  rand,
+                r:r,
+            };
+            karloArr.push(karloObj);
+            localStorage.setItem("karloItems",JSON.stringify(karloArr));
+            displayTable(karloArr);
+          //  alert("Ticket No : "+rand)
+        }
+
+        function displayTable(karloArr){
+            document.querySelector("tbody").textContent= "";
+            karloArr.map(function (elem, index){
+                var tr= document.createElement("tr");
+
+                var td1 = document.createElement("td");
+                td1.textContent=elem.r;
+
+                var td5 = document.createElement("td");
+                td5.textContent=elem.cat;
+
+                var td2 = document.createElement("td");
+                td2.textContent=elem.category;
+
+                var td3 = document.createElement("td");
+                td3.textContent=elem.desc;
+
+                var td4 = document.createElement("td");
+                td4.textContent=elem.date;
+
+                tr.append(td1, td5,td2, td3,td4);
+                document.querySelector("tbody").append(tr);
+            });
+        }
+
+</script>

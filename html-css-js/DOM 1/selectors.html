@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practise Selectors</title>
+    <!-- //JS DOM-1 : WE Assignment 2 -->
+</head>
+<body>
+        <h1 >First H1</h1>
+        <h1>Second H1</h1>
+        <h3>First H3</h3>
+        <h3>Second H3</h3>
+        <h5>First H5</h5>
+        <h5>Second H5</h5>
+        <h5>Third H5</h5>
+        <div class="green">First DIV</div>
+        <div class="red">Second DIV</div>
+        <div class="blue">Third DIV</div>
+        <p class="green">First P</p>
+        <p class="red">Second P</p>
+        <p class="blue">Third P</p>
+        <hr/>
+        <button onclick="changeh1()">Change H1</button>
+        <button onclick="changeh3()">Change H3</button>
+        <button onclick="changeh5()">Change H5</button>
+        <button onclick="classGreen()">Change Green</button>
+        <button onclick="classRed()">Change Red</button>
+        <button onclick="classBlue()">Change Blue</button>
+</body>
+</html>
+
+<script>
+        function changeh1(){
+            document.querySelector("h1").style.color="red"
+        }
+        function changeh3(){
+          var x= document.querySelectorAll("h3")
+          for(var i=0;i<x.length;i++){
+              x[i].style.color ="green"
+          }
+        }
+        function changeh5(){
+          var x= document.querySelectorAll("h5")
+          for(var i=0;i<x.length;i++){
+              x[i].style.color ="blue";
+          }
+        }
+        function classGreen(){
+          var x= document.querySelectorAll(".green")
+          for(var i=0;i<x.length;i++){
+              x[i].style.color ="green";
+          }
+        }
+        function classBlue(){
+          var x= document.querySelectorAll(".blue")
+          for(var i=0;i<x.length;i++){
+              x[i].style.color ="blue";
+          }
+        }
+        function classRed(){
+          var x= document.querySelectorAll(".red")
+          for(var i=0;i<x.length;i++){
+              x[i].style.color ="red";
+          }
+        }
+         
+</script>

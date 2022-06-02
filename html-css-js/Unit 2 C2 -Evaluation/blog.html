@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question-1: Blog Layout (Flex method)</title>
+    <style>
+        #heading{
+            text-align: center;
+        }
+        #heading h5{
+            margin-bottom: 2px;
+            color: red;
+
+        }
+         div>h1{
+            margin-top: 0px;
+            padding: 0px;
+        }
+        #container{
+            width: 100%;
+            display: flex;
+
+            
+        }
+        #container > div{
+            width :30%;
+            height: 250px;
+            margin:auto;
+        }
+        div>img{
+           width: 100%; 
+           height: 300px;
+           
+        }
+        .txt-big{
+            margin-top:0;
+        }
+        div>p{
+            margin-bottom: 5px;
+            color: gray;
+        }
+        button{
+            background-color: rgb(255,50,0);
+            padding: 10px;
+            color: white;
+            border: white;
+            display: flex;
+            margin:auto;
+            margin-top: 140px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="heading">
+        <h5>NEWS AND UPDATE</h5>
+        <h1>Our Blog Posts </h1>
+    </div>
+    <div id="container">
+        <div>
+            <img src="https://media.istockphoto.com/photos/beautiful-luxury-home-exterior-at-twilight-picture-id1026205392?k=20&m=1026205392&s=612x612&w=0&h=lYFMV5cOuQQpddmwsE5QLBCyhgWQ1OI46i_dalro9OE=">
+            <p>29, January 2019</p>
+            <h4 class="txt-big">Artitectural Art Musium</h4>
+        </div>
+        <div>
+            <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/edc080120aman-meeks-005-1591800041.jpg?">
+            <p>29, January 2019</p>
+            <h4 class="txt-big">Artitectural Art Musium</h4>
+        </div>
+        <div>
+            <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/edc080120aman-meeks-005-1591800041.jpg?">
+            <p>29, January 2019</p>
+            <h4 class="txt-big">Artitectural Art Musium</h4>
+        </div>
+    </div>
+
+        <button>View All Posts</button>
+        
+</body>
+</html>

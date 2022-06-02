@@ -1,0 +1,91 @@
+#navbar {
+    display: flex;
+    color: black;
+    justify-content: space-between;
+    height: 40px;
+    width: 95%;
+    margin: 2% 2% 0 1.5%;
+    padding: 25px 0 0 20px;
+    border: 2px solid rgb(44, 66, 128);
+    color: black;
+    background-color: orange
+}
+.right {
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+}
+.left {
+    width: 70%;
+}
+#container{
+    display: grid;
+    grid-template-columns: repeat(3,30%);
+    gap: 10px;
+    margin-left: 5%;
+    
+}
+
+#container img {
+     width: 100%;
+     border-radius: 50%;
+     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+#mealfood{
+    margin-top: 10px;
+    width: 400px;
+    /* height: 700px; */
+    overflow: hidden;
+    overflow: scroll;
+    margin-right: 20px;
+}
+#mealfood img
+{
+   width: 100%;
+   border-radius: 50%;
+   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+ 
+
+}
+#main{
+    display: flex;
+}
+#container div{
+  width: 80%
+}
+#searchkey{
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+#cont2>div{
+    margin-left: 200px;
+        width: 70%;
+}
+#cont2 p{
+    font-size: 40px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    
+}
+#cont2 img{
+    width: 100%;
+   
+}
+body{
+    background-color: gray
+}
+h1{
+    text-align: center;
+}
+#up{
+    display: flex;
+}
+#explain{
+    margin-left: 10%;
+    font-size: 26px;
+    color: white;
+    font-style: italic;
+}
+button{
+    color: white;
+    background-color: black;
+}

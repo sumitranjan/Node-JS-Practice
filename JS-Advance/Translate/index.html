@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Google Translate</title>
+  </head>
+
+  <style>
+      div{
+       
+       height: 300px;
+      }
+      #container{
+          display: flex;
+          height: 600px;
+      }
+      #input-section{
+          flex: 1;
+          margin: 5%;
+          border: solid black 1px;
+      }
+      #output-section{
+          flex: 1;
+           margin: 5%;
+          border: solid black 1px;
+      }
+      #input-text{  
+          width: 98%;
+          height: 80%;
+      }
+  </style>
+
+  <body>
+    <div id="container">
+      <div id="input-section">
+        <!-- <h4>Input Section</h4>   -->
+        <!--Create button that will run translate() text function, give id "translate-btn"-->
+        <button onclick="translateText()"id="translate-btn">Translate</button>
+        <!--Create input that will accept text to be translated, give id "input-text"-->
+        <textarea  id="input-text"></textarea>
+      </div>
+      <div id="output-section">
+        <p id="translated-text">
+          <!--Show translated text here-->
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
+
+<script>
+async function translateText(){ 
+    try{
+    let input=document.getElementById("input-text").value;
+    let res = await fetch('https://libretranslate.de/translate',{
+        method:"POST",
+         body:JSON.stringify({
+            q:input,
+            source:"en",
+            target:"hi",
+            format:"text",
+        }),
+        headers:{
+        
+            "Content-Type":"application/json",
+         
+          },
+        });
+let data=await res.json();
+document.getElementById('translated-text').innerText=data.translatedText;
+// console.log("data:",data);  
+
+}catch(err){
+    console.log("err:",err);
+}
+}
+
+</script>

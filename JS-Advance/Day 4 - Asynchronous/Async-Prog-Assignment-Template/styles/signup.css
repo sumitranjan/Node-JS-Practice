@@ -1,0 +1,19 @@
+/* #signup-form-div{
+    border:1px solid red;
+} */
+
+#signup-form-div>form>input{
+    display: flex;
+    /* justify-content: center; */
+    text-align: center;
+    
+    padding: 10px;
+    margin: 10px auto;
+}
+#submit{
+    height: 35px;
+    width: 14.5%;
+    color:white;
+    background-color: teal;
+   justify-content: center;
+}

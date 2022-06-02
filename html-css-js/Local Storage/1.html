@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+<script>
+    //localStorage.setItem("key","value")
+    //localStorage.getItem("key")
+    //localStorage.removeItem("key")--both key & value will be removed
+    //localStorage.clear()--clear everything in local storage
+
+    //Local Storage stores only strings
+
+    //store numbers in localStorage
+
+    localStorage.setItem("roll_no",12345);
+    localStorage.setItem("mobile_no",'123456');
+
+    var x = localStorage.getItem("roll_no");
+    console.log(x);
+    
+    //store  strings
+
+    localStorage.setItem("name1","deepak");
+    localStorage.setItem("name2","sagar");
+
+    var name1 = localStorage.getItem("name1");
+    console.log(name1);
+
+
+    // array
+
+    var arr = ["html","css","js","react"];
+    //convert arr to sring then store
+    arr = JSON.stringify(arr);
+    localStorage.setItem("WEB",arr);
+
+    var z = localStorage.getItem("WEB");
+    console.log(typeof z);
+
+
+    // obj
+
+    var obj = {name:"Hrithik",place:"patna"};
+    //convert obj to sring then store
+    obj = JSON.stringify(obj)
+    localStorage.setItem("student",obj)
+
+    // var z1 =  localStorage.getItem("student");
+    // console.log(z1); // JSON file 
+    // console.log(typeof z1);
+
+    // z1 = JSON.parse(z1); //JSON to Object
+
+    // combine in one one line
+    var z1 = JSON.parse(localStorage.getItem("student"));
+    console.log(z1.name);
+
+    // whenever you are sending data to local storage -- JSON.stringify
+    // whenever you are receiving data from local storage -- JSON.parse
+
+
+    
+
+</script>

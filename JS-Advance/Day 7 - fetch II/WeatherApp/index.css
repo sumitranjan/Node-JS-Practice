@@ -1,0 +1,50 @@
+body{
+     background-color: rgb(69,64,96);
+}
+
+#nav{
+    /* border: 1px solid red; */
+    /* display: inline-block !important; */
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+
+}
+#city{
+    font-size: 20px;
+    background-color: rgb(69,64,96);
+    color: white;
+    border-radius: 10px;
+
+}
+#searchCity{
+    font-size: 20px;
+    background-color: rgb(69,64,96);
+    color: white;
+    border-radius: 10px;
+}
+#content{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 40px;
+    /* border: 1px solid red; */
+}
+#temp_detail,p{
+    font-size: 20px;
+    font-weight:bold;
+    color: white;
+}
+#future_days{
+    display: flex;
+    /* border: 1px solid green; */
+    margin: 35px;
+}
+#future_days>p{
+    /* font-size: 15px; */
+    margin-right: 25px;
+    color: rgb(27, 233, 27);
+
+}
+/* #future_days>div>p{
+    color: white;
+} */

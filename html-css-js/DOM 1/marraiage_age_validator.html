@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS DOM - 1: Assignment 2</title>
+</head>
+<body>
+    <select id="gender">
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+    </select>
+    <input type="text" name="year" id="year">
+	<button onclick="checkAge()">Check Marriage Age</button>
+
+</body>
+</html>
+
+<script>
+    function checkAge(){
+        var gender = document.querySelector("#gender").value;
+        var year = document.querySelector("#year").value;
+        if(gender="male"){
+            if(2022-year >= 21){
+                alert("valid legal age to get married");
+            }
+            else{
+                alert("Not valid legal age to get married");
+            }
+        }
+        else
+        {
+            if(2022-year >= 18){
+                alert("valid legal age to get married");
+            }
+            else{
+                alert("Not valid legal age to get married");
+            }
+        }
+    }
+
+</script>

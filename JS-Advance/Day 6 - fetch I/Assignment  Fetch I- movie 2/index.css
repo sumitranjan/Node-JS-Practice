@@ -1,0 +1,86 @@
+
+#container {
+    display: grid;
+    grid-template-columns: repeat(3,32%);
+    text-align: center;
+}
+#movieNotFound{
+    margin:50px 0 0 500px;
+    
+}
+#recomended{
+    color: red;
+    font-weight: bold;
+}
+
+
+
+body{
+    background-color: gray;
+}    
+.vsc-initialized{
+    margin-top: 0;
+}
+  #container{
+    display:grid;
+    grid-template-columns: repeat(4,25%);
+    margin-left: 15px;
+    /* border: 1px solid red; */
+    margin-top: 20px;
+    
+  }
+
+
+  #search-box{
+      /* border: 1px solid blue; */
+      height: 70px;
+      text-align: center;
+      /* background-color: gray; */
+      margin-top: 0px;
+      
+  }
+  #movie{
+      height:30px;
+      border-radius: 5px;
+      border-color: gray;
+      margin-top: 20px;
+      background-color: rgb(228, 220, 220);
+      color: black;
+      font-weight: bold;
+      
+  }
+  #btn{
+      width:70px;
+      height: 32px;
+      color: white;
+      background-color: black;
+      font-weight: bold;
+      border-radius: 60px;
+      
+  }
+  p{
+      font-weight: bold;
+  }
+
+  input {
+
+    width: 200px;
+  }
+
+  #movies-list {
+
+    height: 200px;
+    width: 300px;
+    border: solid 1px black;
+    overflow: scroll;
+    margin: auto;
+
+  }
+
+  #searchMovie{
+      color: white;
+      background-color: black;
+      width: 90px;
+      height: 35px;
+  }
+ 

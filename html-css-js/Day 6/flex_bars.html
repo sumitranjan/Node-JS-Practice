@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment: Problem -1: Bars (Flex)</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        .container{
+            width: 60%;
+            height: 609px;
+            background-color: white;
+            /* border: 1px solid red; */
+            margin: auto;
+            display: flex;
+            align-items:center;
+            justify-content: center;
+        }
+        .container>div{
+            width:110px;
+            height:70%;
+            border:1px solid gray;
+            background-color: rgb(33,120,103);
+            border-radius: 5px;
+            
+        }
+        .right-margin{
+            margin-right: 50px;
+        }
+        .left-margin{
+            margin-left: 50px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="verical left-margin right-margin" id="card"></div>
+        <div class="verical right-margin"></div>
+        <div class="verical right-margin"></div>
+        <div class="verical right-margin"></div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment: Pseudo Classes </title>
+    <style>
+        body{
+            background-color: black;
+        }
+        .container{
+            width:35%;
+            height:545px;
+            border:1px;
+            background-color: white;
+            margin:auto;
+            margin-top: 50px;
+            border: 1px solid white;;
+        }
+        .box{
+            width: 97%;
+            height:55px;
+            margin:auto;
+            border:1px;
+            margin-bottom: 0px;
+            border-radius: 5px;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            
+        }
+        .top-margin{
+            margin-top:7px;
+        }
+        .box:nth-child(1){
+            background-color: white;
+            color:gray
+        }
+        .box:nth-child(2){
+            background-color: rgb(179,212,255);
+            color: blue;
+        }
+        .box:nth-child(3){
+            background-color: rgb(214,215,219);
+            color: gray;
+        }
+        .box:nth-child(4){
+            background-color: rgb(181,238,204);
+            color: green;
+        }
+        .box:nth-child(5){
+            background-color:rgb(255,192,201);
+            color: rgb(233, 20, 55);
+        }
+        .box:nth-child(6){
+            background-color: rgb(255,246,184);
+            color: rgb(146, 146, 47);
+        }
+        .box:nth-child(7){
+            background-color: rgb(178,231,237);
+            color: rgb(23, 91, 117);
+        }
+        .box:nth-child(8){
+            background-color: rgb(253,253,254);
+            color: gray;
+        }
+        .box:nth-child(9){
+            background-color:rgb(198,200,202);
+            color: black;
+        }
+        p{
+            padding: 12px;
+            margin: 2px;;
+            font-family: Cambria;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box item1 top-margin">
+            <p>Dapibus as facilisis in</p>
+        </div>
+        <div class="box item1">
+            <p> is primary list group item</p>
+        </div>
+        <div class="box item1">
+            <p> is secondary list group item</p>
+        </div>
+        <div class="box item1">
+            <p>This is successor list group item</p>
+        </div>
+        <div class="box item1">
+            <p>This is danger list group item</p>        
+            </div>
+        <div class="box item1">
+            <p>This is warning list group item</p>
+        </div>
+        <div class="box item1">
+            <p>This is info list group item</p>
+        </div>
+        <div class="box item1">
+            <p>This is light list group item</p>
+        </div>
+        <div class="box item1">
+            <p>This is dark list group item</p>
+        </div>
+        
+    </div>
+</body>
+</html>

@@ -1,0 +1,157 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <style type="text/css">
+        body{
+            background-color: #d6d7db;
+        }
+      #container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+      }
+      #flex {
+        display: flex;
+        justify-content: space-around;
+      }
+      #flex > p:nth-child(2) {
+        text-decoration: line-through;
+      }
+      #cheak{
+        margin: right;
+        display: flex;
+        justify-content: space-around;
+      }
+      #cheakout{
+        position: fixed;
+      }
+
+      .coupon{
+        visibility: hidden;
+      }
+    </style>
+</head>
+<body>
+    <div id="cheak">    <h1>Cart Page</h1>  <button id="cheakout">Cheakout</button></div>
+    <div class="coupon">
+    <input id="applycoupon" type="text" list="coupons"placeholder="Enter coupon code"><button id="coupon">Apply coupon</button>
+
+    <div id="container"></div>
+    <datalist id="coupons">
+        <option value="masai30"></option>
+        <option value="masai50"></option>
+        <option value="masai500"></option>
+    </datalist>
+</div>
+</body>
+</html>
+
+<script type="text/javascript">
+    var cartArr=JSON.parse(localStorage.getItem("CartItems"));
+    var dis=0;
+    var per=0;
+    var total=0;
+    createtable();
+
+    function createtable()
+    {
+        document.querySelector("#container").innerHTML="";
+    cartArr.map(function(data){
+
+        var div=document.createElement("div");
+
+        var image = document.createElement("img");
+        image.setAttribute("src", data.image_url);
+
+        var name=document.createElement("p");
+        name.textContent=data.name;
+
+        var div2=document.createElement("div");
+        div2.setAttribute("id","flex")
+
+        var p1=document.createElement("p");
+        p1.textContent=data.price;
+
+        var p2=document.createElement("p");
+        p2.textContent=data.strikedoffprice;
+        p2.style.textDecoration="line-through";
+
+        var btn=document.createElement("button")
+        btn.textContent="Remove to card";
+        btn.addEventListener("click",function(){
+            deleteToCart(data);
+        })
+
+        div2.append(p1,p2,btn);
+
+
+        div.append(image,name,div2);
+        document.querySelector("#container").append(div);
+    })
+    total=cartArr.reduce(function(acc,cv){
+        return acc+Number(cv.price);
+    },0)
+    total=((total-dis)/100)*(100-per);
+    total=Math.ceil(total);
+    var striktotal=cartArr.reduce(function(acc,cv){
+        return acc+Number(cv.strikedoffprice);
+    },0)
+    document.querySelector("h1").innerHTML="Cart total value ="+total+"   <strike>"+striktotal+"</strike>";
+
+
+}
+
+document.getElementById("cheakout").addEventListener("click",function(){
+    if(total==0){
+        alert("please add product into the cart")
+    }
+    else{
+    window.location.href="success.html";
+    alert(" Thank you for purchasing");
+    localStorage.setItem("totalPayment",JSON.stringify(total));}
+})
+
+
+document.getElementById("coupon").addEventListener("click",function(){
+        var val=document.querySelector("#applycoupon").value;
+        if(val=="masai30")
+        {
+            alert("coupon successfully apply");
+            per=30;
+            dis=0;
+            createtable();
+
+        }
+        else if(val=="masai50")
+        {
+            alert("coupon successfully apply");
+            per=50;
+            dis=0;
+            createtable();
+
+        }
+        else if(val=="masai500")
+        {
+            alert("coupon successfully apply");
+            dis=500;
+            per=0;
+            createtable();
+
+        }
+        else{
+            alert("you enter wrong coupon code please try again")
+        }
+    });
+
+    function deleteToCart(data){
+                cartArr.splice(cartArr.indexOf(data),1);
+                createtable();
+                localStorage.setItem("CartItems",JSON.stringify(cartArr));
+    }
+
+   
+</script>

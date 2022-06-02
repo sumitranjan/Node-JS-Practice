@@ -1,0 +1,12 @@
+#login-form-div{
+    /* border:1px solid red; */
+    text-align: center;
+    margin: auto;
+}
+
+#submit{
+    height: 30px;
+    width: 14%;
+    color:white;
+    background-color: teal;
+}

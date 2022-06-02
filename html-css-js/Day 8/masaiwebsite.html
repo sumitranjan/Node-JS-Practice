@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+
+body {
+    font-family: var(--chakra-fonts-body);
+    color: var(--chakra-colors-gray-800);
+    background: var(--chakra-colors-white);
+    transition-property: background-color;
+    transition-duration: var(--chakra-transition-duration-normal);
+    line-height: var(--chakra-lineHeights-base);
+}
+body, blockquote, dl, dd, h1, h2, h3, h4, h5, h6, hr, figure, p, pre {
+    margin: 0;
+}
+body {
+    position: relative;
+    min-height: 105%;
+    font-feature-settings: 'kern';
+}
+body {
+    font-family: inherit;
+    line-height: inherit;
+}
+body {
+    margin: 0;
+    font-family: system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;
+}
+*, *::before, ::after {
+    border-color: var(--chakra-colors-gray-200);
+    word-wrap: break-word;
+}
+*, *::before, *::after {
+    border-width: 0;
+    border-style: solid;
+    box-sizing: border-box;
+}
+*, :after, :before {
+    --tw-translate-x: 0;
+    --tw-translate-y: 0;
+    --tw-rotate: 0;
+    --tw-skew-x: 0;
+    --tw-skew-y: 0;
+    --tw-scale-x: 1;
+    --tw-scale-y: 1;
+    --tw-transform: translateX(var(--tw-translate-x)) translateY(var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+    --tw-border-opacity: 1;
+    border-color: rgba(229,231,235,var(--tw-border-opacity));
+    --tw-ring-inset: var(--tw-empty,/*!*/ /*!*/);
+    --tw-ring-offset-width: 0px;
+    --tw-ring-offset-color: #fff;
+    --tw-ring-color: rgba(59,130,246,0.5);
+    --tw-ring-offset-shadow: 0 0 #0000;
+    --tw-ring-shadow: 0 0 #0000;
+    --tw-shadow: 0 0 #0000;
+    --tw-blur: var(--tw-empty,/*!*/ /*!*/);
+    --tw-brightness: var(--tw-empty,/*!*/ /*!*/);
+    --tw-contrast: var(--tw-empty,/*!*/ /*!*/);
+    --tw-grayscale: var(--tw-empty,/*!*/ /*!*/);
+    --tw-hue-rotate: var(--tw-empty,/*!*/ /*!*/);
+    --tw-invert: var(--tw-empty,/*!*/ /*!*/);
+    --tw-saturate: var(--tw-empty,/*!*/ /*!*/);
+    --tw-sepia: var(--tw-empty,/*!*/ /*!*/);
+    --tw-drop-shadow: var(--tw-empty,/*!*/ /*!*/);
+    --tw-filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+*, :after, :before {
+    box-sizing: border-box;
+    border: 0 solid;
+}
+user agent stylesheet
+body {
+    display: block;
+    margin: 8px;
+}
+style attribute {
+    --chakra-ui-color-mode: light;
+}
+:host, :root {
+    --chakra-ring-inset: var(--chakra-empty,/*!*/ /*!*/);
+    --chakra-ring-offset-width: 0px;
+    --chakra-ring-offset-color: #fff;
+    --chakra-ring-color: rgba(66, 153, 225, 0.6);
+    --chakra-ring-offset-shadow: 0 0 #0000;
+    --chakra-ring-shadow: 0 0 #0000;
+    --chakra-space-x-reverse: 0;
+    --chakra-space-y-reverse: 0;
+    --chakra-colors-transparent: transparent;
+    --chakra-colors-current: currentColor;
+    --chakra-colors-black: #000000;
+    --chakra-colors-white: #FFFFFF;
+    --chakra-colors-whiteAlpha-50: rgba(255, 255, 255, 0.04);
+    --chakra-colors-whiteAlpha-100: rgba(255, 255, 255, 0.06);
+    --chakra-colors-whiteAlpha-200: rgba(255, 255, 255, 0.08);
+    --chakra-colors-whiteAlpha-300: rgba(255, 255, 255, 0.16);
+    --chakra-colors-whiteAlpha-400: rgba(255, 255, 255, 0.24);
+    --chakra-colors-whiteAlpha-500: rgba(255, 255, 255, 0.36);
+    --chakra-colors-whiteAlpha-600: rgba(255, 255, 255, 0.48);
+    --chakra-colors-whiteAlpha-700: rgba(255, 255, 255, 0.64);
+    --chakra-colors-whiteAlpha-800: rgba(255, 255, 255, 0.80);
+    --chakra-colors-whiteAlpha-900: rgba(255, 255, 255, 0.92);
+    --chakra-colors-blackAlpha-50: rgba(0, 0, 0, 0.04);
+    --chakra-colors-blackAlpha-100: rgba(0, 0, 0, 0.06);
+    --chakra-colors-blackAlpha-200: rgba(0, 0, 0, 0.08);
+    --chakra-colors-blackAlpha-300: rgba(0, 0, 0, 0.16);
+    --chakra-colors-blackAlpha-400: rgba(0, 0, 0, 0.24);
+    --chakra-colors-blackAlpha-500: rgba(0, 0, 0, 0.36);
+    --chakra-colors-blackAlpha-600: rgba(0, 0, 0, 0.48);
+    --chakra-colors-blackAlpha-700: rgba(0, 0, 0, 0.64);
+    --chakra-colors-blackAlpha-800: rgba(0, 0, 0, 0.80);
+    --chakra-colors-blackAlpha-900: rgba(0, 0, 0, 0.92);
+    --chakra-colors-gray-50: #F7FAFC;
+    --chakra-colors-gray-100: #EDF2F7;
+    --chakra-colors-gray-200: #E2E8F0;
+    --chakra-colors-gray-300: #CBD5E0;
+    --chakra-colors-gray-400: #A0AEC0;
+    --chakra-colors-gray-500: #718096;
+    --chakra-colors-gray-600: #4A5568;
+    --chakra-colors-gray-700: #2D3748;
+    --chakra-colors-gray-800: #1A202C;
+    --chakra-colors-gray-900: #171923;
+    --chakra-colors-red-50: #FFF5F5;
+    --chakra-colors-red-100: #FED7D7;
+    --chakra-colors-red-200: #FEB2B2;
+    --chakra-colors-red-300: #FC8181;
+    --chakra-colors-red-400: #F56565;
+    --chakra-colors-red-500: #E53E3E;
+    --chakra-colors-red-600: #C53030;
+    --chakra-colors-red-700: #9B2C2C;
+
+}
+:root {
+    --swiper-theme-color: #007aff;
+}
+html {
+    line-height: 1.5;
+    -webkit-text-size-adjust: 100%;
+    font-family: system-ui,sans-serif;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    -moz-osx-font-smoothing: grayscale;
+    touch-action: manipulation;
+}
+html {
+    font-family: Open Sans,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+    line-height: 1.5;
+}
+html {
+    tab-size: 4;
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+}
+*, *::before, ::after {
+    border-color: var(--chakra-colors-gray-200);
+    word-wrap: break-word;
+}
+*, *::before, *::after {
+    border-width: 0;
+    border-style: solid;
+    box-sizing: border-box;
+}
+*, :after, :before {
+    --tw-translate-x: 0;
+    --tw-translate-y: 0;
+    --tw-rotate: 0;
+    --tw-skew-x: 0;
+    --tw-skew-y: 0;
+    --tw-scale-x: 1;
+    --tw-scale-y: 1;
+    --tw-transform: translateX(var(--tw-translate-x)) translateY(var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+    --tw-border-opacity: 1;
+    border-color: rgba(229,231,235,var(--tw-border-opacity));
+    --tw-ring-inset: var(--tw-empty,/*!*/ /*!*/);
+    --tw-ring-offset-width: 0px;
+    --tw-ring-offset-color: #fff;
+    --tw-ring-color: rgba(59,130,246,0.5);
+    --tw-ring-offset-shadow: 0 0 #0000;
+    --tw-ring-shadow: 0 0 #0000;
+    --tw-shadow: 0 0 #0000;
+    --tw-blur: var(--tw-empty,/*!*/ /*!*/);
+    --tw-brightness: var(--tw-empty,/*!*/ /*!*/);
+    --tw-contrast: var(--tw-empty,/*!*/ /*!*/);
+    --tw-grayscale: var(--tw-empty,/*!*/ /*!*/);
+    --tw-hue-rotate: var(--tw-empty,/*!*/ /*!*/);
+    --tw-invert: var(--tw-empty,/*!*/ /*!*/);
+    --tw-saturate: var(--tw-empty,/*!*/ /*!*/);
+    --tw-sepia: var(--tw-empty,/*!*/ /*!*/);
+    --tw-drop-shadow: var(--tw-empty,/*!*/ /*!*/);
+    --tw-filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+*, :after, :before {
+    box-sizing: border-box;
+    border: 0 solid;
+}
+*, *::before, ::after {
+    border-color: var(--chakra-colors-gray-200);
+    word-wrap: break-word;
+}
+*, *::before, *::after {
+    border-width: 0;
+    border-style: solid;
+    box-sizing: border-box;
+}
+*, :after, :before {
+    --tw-translate-x: 0;
+    --tw-translate-y: 0;
+    --tw-rotate: 0;
+    --tw-skew-x: 0;
+    --tw-skew-y: 0;
+    --tw-scale-x: 1;
+    --tw-scale-y: 1;
+    --tw-transform: translateX(var(--tw-translate-x)) translateY(var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+    --tw-border-opacity: 1;
+    border-color: rgba(229,231,235,var(--tw-border-opacity));
+    --tw-ring-inset: var(--tw-empty,/*!*/ /*!*/);
+    --tw-ring-offset-width: 0px;
+    --tw-ring-offset-color: #fff;
+    --tw-ring-color: rgba(59,130,246,0.5);
+    --tw-ring-offset-shadow: 0 0 #0000;
+    --tw-ring-shadow: 0 0 #0000;
+    --tw-shadow: 0 0 #0000;
+    --tw-blur: var(--tw-empty,/*!*/ /*!*/);
+    --tw-brightness: var(--tw-empty,/*!*/ /*!*/);
+    --tw-contrast: var(--tw-empty,/*!*/ /*!*/);
+    --tw-grayscale: var(--tw-empty,/*!*/ /*!*/);
+    --tw-hue-rotate: var(--tw-empty,/*!*/ /*!*/);
+    --tw-invert: var(--tw-empty,/*!*/ /*!*/);
+    --tw-saturate: var(--tw-empty,/*!*/ /*!*/);
+    --tw-sepia: var(--tw-empty,/*!*/ /*!*/);
+    --tw-drop-shadow: var(--tw-empty,/*!*/ /*!*/);
+    --tw-filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+*, :after, :before {
+    box-sizing: border-box;
+    border: 0 solid;
+}
+    </style>
+</head>
+<body class="jsx-397bb7cff0cecce7 chakra-ui-light vsc-initialized" data-new-gr-c-s-check-loaded="14.1043.0" data-gr-ext-installed=""><div id="__next" data-reactroot=""><div></div><div class="css-1j6cyiq"><div class="chakra-container css-pv3g6k"><header class="css-2sxo1"><div class="css-eiuung"><svg viewBox="0 0 24 24" focusable="false" class="chakra-icon css-n059si"><path fill="currentColor" d="M 3 5 A 1.0001 1.0001 0 1 0 3 7 L 21 7 A 1.0001 1.0001 0 1 0 21 5 L 3 5 z M 3 11 A 1.0001 1.0001 0 1 0 3 13 L 21 13 A 1.0001 1.0001 0 1 0 21 11 L 3 11 z M 3 17 A 1.0001 1.0001 0 1 0 3 19 L 21 19 A 1.0001 1.0001 0 1 0 21 17 L 3 17 z"></path></svg></div><div class="css-k4h52c"><img alt="masai-logo" src="/img/navbar/logo.svg" class="chakra-image css-w0ixif" href="/"></div><div class="css-1ktfgkk"><div spacing="4" class="css-1nxtncc"><p class="chakra-text css-14199t" href="/faq/">faq</p><a target="_blank" href="https://bootcamp.masaischool.com/"><p class="chakra-text css-14199t">Events</p></a><p class="chakra-text css-14199t" href="/hire-masai-grads/">Hire From Us</p><p class="chakra-text css-14199t" href="/about/">About us</p><p class="chakra-text css-14199t" href="/fees/">Fees &amp; ISA</p></div><div spacing="4" class="css-1nxtncc"><button type="button" class="chakra-button chakra-menu__menu-button css-zi6nxe" id="menu-button-4" aria-expanded="false" aria-haspopup="menu" aria-controls="menu-list-4"><span class="css-xl71ch">Courses</span><span class="chakra-button__icon css-1hzyiq5"><svg viewBox="0 0 24 24" focusable="false" class="chakra-icon css-n059si" aria-hidden="true"><path fill="currentColor" d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"></path></svg></span></button><div class="css-r6z5ec" style="visibility: hidden; position: absolute; min-width: max-content; inset: 0px auto auto 0px;"><div tabindex="-1" role="menu" id="menu-list-4" aria-orientation="vertical" class="chakra-menu__menu-list css-enf65v" style="transform-origin: var(--popper-transform-origin); opacity: 0; visibility: hidden; transform: scale(0.8) translateZ(0px);"><div class="chakra-menu__group" role="group"><p class="chakra-menu__group__title chakra-menu__option-group css-hunt27">Full Time</p><div class="css-3ze224"><a href="/courses/full-stack-web-dev-full-time/"><div class="css-1lekzkb"><p class="chakra-text css-1wavpwn">Full Stack Web Development</p><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" font-size="24px" class="text-primary-ms-red-500" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h24v24H0z"></path><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg></div><div align="center" class="css-k008qs"><p class="chakra-text css-174lova">
+                    30 Weeks
+                    | 18 - 28 Yrs
+                    | Online | Offline</p></div></a></div></div><div class="chakra-menu__group" role="group"><p class="chakra-menu__group__title chakra-menu__option-group css-hunt27">Part Time</p><div class="css-3ze224"><a href="/courses/full-stack-web-dev-part-time/"><div class="css-1lekzkb"><p class="chakra-text css-1wavpwn">Full Stack Web Development</p><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" font-size="24px" class="text-primary-ms-red-500" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h24v24H0z"></path><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg></div><div align="center" class="css-k008qs"><p class="chakra-text css-174lova">
+                    30 Weeks
+                    | 18 - 28 Yrs
+                    | Online</p></div></a></div><div class="css-3ze224"><a href="/courses/android-part-time/"><div class="css-1lekzkb"><p class="chakra-text css-1wavpwn">Full Stack Android Development</p><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" font-size="24px" class="text-primary-ms-red-500" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h24v24H0z"></path><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg></div><div align="center" class="css-k008qs"><p class="chakra-text css-174lova">
+                    30 Weeks
+                    | 18 - 28 Yrs
+                    | Online</p></div></a></div></div></div></div></div></div><div class="css-1wt8gg0"><div class="chakra-slide" style="position: absolute; right: 0px; top: 0px; bottom: 0px; width: 100%; transform: translateX(0%) translateY(0px) translateZ(0px);"><a class="chakra-button css-yqwvza" href="https://onward.masaischool.com/register" target="_blank" id="applyNow">Apply Now for Free</a></div></div><div class="css-192qrng"><a class="chakra-button css-9c5r5c" href="https://onward.masaischool.com/signin" target="_blank" id="login">Login</a><a class="chakra-button css-popkxy" href="https://onward.masaischool.com/signin" target="_blank" id="loginMd">login</a></div></header></div><div class="chakra-collapse" style="overflow: hidden; display: none; opacity: 0; height: 0px;"><div class="css-wyh2o3"><div class="chakra-container css-1ohrf4i"><div id="courses" class="css-5boxei" style="scroll-margin-top: 100px;"><div class="css-ozv6cb"></div><div class="css-i14gmv"><p class="chakra-text css-1o7qi5v">Courses</p><div class="css-0"><p class="chakra-text css-caizer">Full Time</p><div class="css-19wvtu9"><a href="/courses/full-stack-web-dev-full-time/"><div class="css-1lekzkb"><p class="chakra-text css-1wavpwn">Full Stack Web Development</p><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" font-size="24px" class="text-primary-ms-red-500" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h24v24H0z"></path><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg></div><div align="center" class="css-k008qs"><p class="chakra-text css-174lova">
+                    30 Weeks
+                    | 18 - 28 Yrs
+                    | Online | Offline</p></div></a></div></div><div class="css-0"><p class="chakra-text css-caizer">Part Time</p><div class="css-19wvtu9"><a href="/courses/full-stack-web-dev-part-time/"><div class="css-1lekzkb"><p class="chakra-text css-1wavpwn">Full Stack Web Development</p><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" font-size="24px" class="text-primary-ms-red-500" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h24v24H0z"></path><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg></div><div align="center" class="css-k008qs"><p class="chakra-text css-174lova">
+                    30 Weeks
+                    | 18 - 28 Yrs
+                    | Online</p></div></a></div><div class="css-19wvtu9"><a href="/courses/android-part-time/"><div class="css-1lekzkb"><p class="chakra-text css-1wavpwn">Full Stack Android Development</p><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" font-size="24px" class="text-primary-ms-red-500" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h24v24H0z"></path><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg></div><div align="center" class="css-k008qs"><p class="chakra-text css-174lova">
+                    30 Weeks
+                    | 18 - 28 Yrs
+                    | Online</p></div></a></div></div><div spacing="4" class="css-1nxtncc"><p class="chakra-text css-14199t" href="/faq/">Frequently Asked Questions</p><a target="_blank" href="https://bootcamp.masaischool.com/"><p class="chakra-text css-14199t">Events</p></a><p class="chakra-text css-14199t" href="/hire-masai-grads/">Hire From Us</p><p class="chakra-text css-14199t" href="/about/">About us</p><p class="chakra-text css-14199t" href="/fees/">Fees &amp; ISA</p></div></div></div><footer class="css-m90yv2"><div class="css-0"></div></footer></div></div></div></div><div class="css-17o2d0k"><div class="chakra-container css-jf7n8r"><a target="_blank" href="https://economictimes.indiatimes.com/tech/startups/tech-skilling-startup-masai-school-acqui[…]s-firm-prepleaf-for-1-million/articleshow/88404992.cms"><div class="lazyload-wrapper "><img alt="masai-prepleaf-banner" src="/img/homepage/prepleaf-banner.png" class="chakra-image css-poa4jc" data-width="1280px" data-height="247px"></div></a></div></div><section><section class="css-3rglmk"><div class="css-27th84"><h1 class="chakra-heading css-10punqh">Driven by Outcomes, Fuelled by Ambitions.</h1><div class="css-18dx0ob"><p class="chakra-text css-1ayfwcb">Launch your dream career </p><p class="chakra-text css-1t2fflt">at 0 upfront fees.</p><img alt="scribble" src="/img/homepage/scribble.png" class="chakra-image css-1ru2w6a"></div><div spacing="4" class="css-1akv7z1"><a class="chakra-button css-o2kulz" href="https://onward.masaischool.com/register" target="_blank" id="freeLearning">APPLY NOW FOR FREE</a></div></div></section><div class="css-15zr1ev"><div class="bg-white marquee-container" style="--pause-on-hover:paused; --pause-on-click:running;"><div class="marquee" style="--play:running; --direction:normal; --duration:0s; --delay:0s; --iteration-count:infinite;"><div class="primary css-0"><div class="css-259i0c"><div class="lazyload-wrapper "><div class="lazyload-placeholder" style="height: 200px;"></div></div></div><div class="css-ozv6cb"><div class="lazyload-wrapper "><img alt="stud-image-desktop-upload.png" src="https://masai-website-images.s3.ap-south-1.amazonaws.com/stud_image_desktop_upload_793ed2b430.png" class="w-full h-full object-center object-cover css-1xutn20" data-width="1440px" data-height="328px"></div></div></div><div class="primary css-0"><div class="css-259i0c"><div class="lazyload-wrapper "><div class="lazyload-placeholder" style="height: 200px;"></div></div></div><div class="css-ozv6cb"><div class="lazyload-wrapper "><img alt="stud-image-desktop-upload.png" src="https://masai-website-images.s3.ap-south-1.amazonaws.com/stud_image_desktop_upload_793ed2b430.png" class="w-full h-full object-center object-cover css-1xutn20" data-width="1440px" data-height="328px"></div></div></div><div class="primary css-0"><div class="css-259i0c"><div class="lazyload-wrapper "><div class="lazyload-placeholder" style="height: 200px;"></div></div></div><div class="css-ozv6cb"><div class="lazyload-wrapper "><img alt="stud-image-desktop-upload.png" src="https://masai-website-images.s3.ap-south-1.amazonaws.com/stud_image_desktop_upload_793ed2b430.png" class="w-full h-full object-center object-cover css-1xutn20" data-width="1440px" data-height="328px"></div></div></div></div><div class="marquee" style="--play:running; --direction:normal; --duration:0s; --delay:0s; --iteration-count:infinite;"><div class="primary css-0"><div class="css-259i0c"><div class="lazyload-wrapper "><div class="lazyload-placeholder" style="height: 200px;"></div></div></div><div class="css-ozv6cb"><div class="lazyload-wrapper "><img alt="stud-image-desktop-upload.png" src="https://masai-website-images.s3.ap-south-1.amazonaws.com/stud_image_desktop_upload_793ed2b430.png" class="w-full h-full object-center object-cover css-1xutn20" data-width="1440px" data-height="328px"></div></div></div><div class="primary css-0"><div class="css-259i0c"><div class="lazyload-wrapper "><div class="lazyload-placeholder" style="height: 200px;"></div></div></div><div class="css-ozv6cb"><div class="lazyload-wrapper "><img alt="stud-image-desktop-upload.png" src="https://masai-website-images.s3.ap-south-1.amazonaws.com/stud_image_desktop_upload_793ed2b430.png" class="w-full h-full object-center object-cover css-1xutn20" data-width="1440px" data-height="328px"></div></div></div><div class="primary css-0"><div class="css-259i0c"><div class="lazyload-wrapper "><div class="lazyload-placeholder" style="height: 200px;"></div></div></div><div class="css-ozv6cb"><div class="lazyload-wrapper "><img alt="stud-image-desktop-upload.png" src="https://masai-website-images.s3.ap-south-1.amazonaws.com/stud_image_desktop_upload_793ed2b430.png" class="w-full h-full object-center object-cover css-1xutn20" data-width="1440px" data-height="328px"></div></div></div></div></div></div><div class="css-183x2wt"><div class="css-xi606m"><p class="chakra-heading css-1ykzq9j">Have a Dream Company In Mind?</p><h2 class="chakra-heading css-1c6niss">Meet Some Of Our 700+ Hiring Partners</h2></div><div class="css-6ywkf1"><div class="bg-ms-red-50 marquee-container" style="--pause-on-hover:paused; --pause-on-click:running;"><div class="marquee" style="--play:running; --direction:normal; --duration:86.4s; --delay:0s; --iteration-count:infinite;"><div class="secondary" style="margin: 0px 32px;"><div class="lazyload-wrapper "><img alt="globallogic.svg" src="https://masai-website-images.s3.ap-south-1.amazonaws.com/globallogic_c30eb641f7.svg" class="chakra-image css-x073jl"></div></div><div class="secondary" style="margin: 0px 32px;"><div class="lazyload-wrapper "><img alt="moneytap.svg" src="https://masai-website-images.s3.ap-south-1.amazonaws.com/moneytap_d5a6c9d532.svg" class="chakra-image css-x073jl"></div></div><div class="secondary" style="margin: 0px 32px;"><div class="lazyload-wrapper "><img alt="eatfit.svg" src="https://masai-website-images.s3.ap-south-1.amazonaws.com/eatfit_9dc276a187.svg" class="chakra-image css-x073jl"></div></div><div class="secondary" style="margin: 0px 32px;"><div class="lazyload-wrapper "><img alt="dream11.svg" src="https://masai-website-images.s3.ap-south-1.amazonaws.com/dream11_d6c8d97a52.svg" class="chakra-image css-x073jl"></div></div><div class="secondary" style="margin: 0px 32px;"><div class="lazyload-wrapper "><img alt="homelane.svg" src="https://masai-website-images.s3.ap-south-1.amazonaws.com/homelane_e9cadd0c3c.svg" class="chakra-image css-x073jl"></div></div><div class="secondary" style="margin: 0px 32px;"><div class="lazyload-wrapper "><img alt="urbanpiper.svg" src="https://masai-website-images.s3.ap-south-1.amazonaws.com/urbanpiper_2884348a0b.svg" class="chakra-image css-x073jl"></div></div><div class="secondary" style="margin: 0px 32px;"><div class="lazyload-wrapper "><img alt="airmeet.svg" src="https://masai-website-images.s3.ap-south-1.amazonaws.com/airmeet_93e45faced.svg" class="chakra-image css-x073jl"></div></div><div class="secondary" style="margin: 0px 32px;"><div class="lazyload-wrapper "><img alt="paytm.svg" src="https://masai-website-images.s3.ap-south-1.amazonaws.com/paytm_a5c1ce2bc6.svg" class="chakra-image css-x073jl"></div></div><div class="secondary" style="margin: 0px 32px;"><div class="lazyload-wrapper "><img alt="whitehat.svg" src="https://masai-website-images.s3.ap-south-1.amazonaws.com/whitehat_5a86f1e308.svg" class="chakra-image css-x073jl"></div></div><div class="secondary" style="margin: 0px 32px;"><div class="lazyload-wrapper "><img alt="bharatpe.svg" src="https://masai-website-images.s3.ap-south-1.amazonaws.com/bharatpe_a3a5a3f552.svg" class="chakra-image css-x073jl"></div></div><div class="secondary" style="margin: 0px 32px;"><div class="lazyload-wrapper "><img alt="swiggy.svg" src="https://masai-website-images.s3.ap-south-1.amazonaws.com/swiggy_bc1b88842e.svg" class="chakra-image css-x073jl"></div></div><div class="secondary" style="margin: 0px 32px;"><div class="lazyload-wrapper "><img alt="salesken.svg" src="https://masai-website-images.s3.ap-south-1.amazonaws.com/salesken_baefe048ac.svg" class="chakra-image css-x073jl"></div></div></div><div class="marquee" style="--play:running; --direction:normal; --duration:86.4s; --delay:0s; --iteration-count:infinite;"><div class="secondary" style="margin: 0px 32px;"><div class="lazyload-wrapper "><img alt="globallogic.svg" src="https://masai-website-images.s3.ap-south-1.amazonaws.com/globallogic_c30eb641f7.svg" class="chakra-image css-x073jl"></div></div><div class="secondary" style="margin: 0px 32px;"><div class="lazyload-wrapper "><img alt="moneytap.svg" src="https://masai-website-images.s3.ap-south-1.amazonaws.com/moneytap_d5a6c9d532.svg" class="chakra-image css-x073jl"></div></div><div class="secondary" style="margin: 0px 32px;"><div class="lazyload-wrapper "><img alt="eatfit.svg" src="https://masai-website-images.s3.ap-south-1.amazonaws.com/eatfit_9dc276a187.svg" class="chakra-image css-x073jl"></div></div><div class="secondary" style="margin: 0px 32px;"><div class="lazyload-wrapper "><img alt="dream11.svg" src="https://masai-website-images.s3.ap-south-1.amazonaws.com/dream11_d6c8d97a52.svg" class="chakra-image css-x073jl"></div></div><div class="secondary" style="margin: 0px 32px;"><div class="lazyload-wrapper "><img alt="homelane.svg" src="https://masai-website-images.s3.ap-south-1.amazonaws.com/homelane_e9cadd0c3c.svg" class="chakra-image css-x073jl"></div></div><div class="secondary" style="margin: 0px 32px;"><div class="lazyload-wrapper "><img alt="urbanpiper.svg" src="https://masai-website-images.s3.ap-south-1.amazonaws.com/urbanpiper_2884348a0b.svg" class="chakra-image css-x073jl"></div></div><div class="secondary" style="margin: 0px 32px;"><div class="lazyload-wrapper "><img alt="airmeet.svg" src="https://masai-website-images.s3.ap-south-1.amazonaws.com/airmeet_93e45faced.svg" class="chakra-image css-x073jl"></div></div><div class="secondary" style="margin: 0px 32px;"><div class="lazyload-wrapper "><img alt="paytm.svg" src="https://masai-website-images.s3.ap-south-1.amazonaws.com/paytm_a5c1ce2bc6.svg" class="chakra-image css-x073jl"></div></div><div class="secondary" style="margin: 0px 32px;"><div class="lazyload-wrapper "><img alt="whitehat.svg" src="https://masai-website-images.s3.ap-south-1.amazonaws.com/whitehat_5a86f1e308.svg" class="chakra-image css-x073jl"></div></div><div class="secondary" style="margin: 0px 32px;"><div class="lazyload-wrapper "><img alt="bharatpe.svg" src="https://masai-website-images.s3.ap-south-1.amazonaws.com/bharatpe_a3a5a3f552.svg" class="chakra-image css-x073jl"></div></div><div class="secondary" style="margin: 0px 32px;"><div class="lazyload-wrapper "><img alt="swiggy.svg" src="https://masai-website-images.s3.ap-south-1.amazonaws.com/swiggy_bc1b88842e.svg" class="chakra-image css-x073jl"></div></div><div class="secondary" style="margin: 0px 32px;"><div class="lazyload-wrapper "><img alt="salesken.svg" src="https://masai-website-images.s3.ap-south-1.amazonaws.com/salesken_baefe048ac.svg" class="chakra-image css-x073jl"></div></div></div></div><div class="mt-10"><div class="bg-ms-red-50 marquee-container" style="--pause-on-hover:paused; --pause-on-click:running;"><div class="marquee" style="--play:running; --direction:normal; --duration:31.2s; --delay:0s; --iteration-count:infinite;"><div class="secondary" style="margin: 0px 26px;"><div class="lazyload-wrapper "><div class="lazyload-placeholder" style="height: 200px;"></div></div></div><div class="secondary" style="margin: 0px 26px;"><div class="lazyload-wrapper "><div class="lazyload-placeholder" style="height: 200px;"></div></div></div><div class="secondary" style="margin: 0px 26px;"><div class="lazyload-wrapper "><div class="lazyload-placeholder" style="height: 200px;"></div></div></div><div class="secondary" style="margin: 0px 26px;"><div class="lazyload-wrapper "><div class="lazyload-placeholder" style="height: 200px;"></div></div></div><div class="secondary" style="margin: 0px 26px;"><div class="lazyload-wrapper "><div class="lazyload-placeholder" style="height: 200px;"></div></div></div><div class="secondary" style="margin: 0px 26px;"><div class="lazyload-wrapper "><div class="lazyload-placeholder" style="height: 200px;"></div></div></div><div class="secondary" style="margin: 0px 26px;"><div class="lazyload-wrapper "><div class="lazyload-placeholder" style="height: 200px;"></div></div></div><div class="secondary" style="margin: 0px 26px;"><div class="lazyload-wrapper "><div class="lazyload-placeholder" style="height: 200px;"></div></div></div><div class="secondary" style="margin: 0px 26px;"><div class="lazyload-wrapper "><div class="lazyload-placeholder" style="height: 200px;"></div></div></div><div class="secondary" style="margin: 0px 26px;"><div class="lazyload-wrapper "><div class="lazyload-placeholder" style="height: 200px;"></div></div></div><div class="secondary" style="margin: 0px 26px;"><div class="lazyload-wrapper "><div class="lazyload-placeholder" style="height: 200px;"></div></div></div><div class="secondary" style="margin: 0px 26px;"><div class="lazyload-wrapper "><div class="lazyload-placeholder" style="height: 200px;"></div></div></div></div><div class="marquee" style="--play:running; --direction:normal; --duration:31.2s; --delay:0s; --iteration-count:infinite;"><div class="secondary" style="margin: 0px 26px;"><div class="lazyload-wrapper "><div class="lazyload-placeholder" style="height: 200px;"></div></div></div><div class="secondary" style="margin: 0px 26px;"><div class="lazyload-wrapper "><div class="lazyload-placeholder" style="height: 200px;"></div></div></div><div class="secondary" style="margin: 0px 26px;"><div class="lazyload-wrapper "><div class="lazyload-placeholder" style="height: 200px;"></div></div></div><div class="secondary" style="margin: 0px 26px;"><div class="lazyload-wrapper "><div class="lazyload-placeholder" style="height: 200px;"></div></div></div><div class="secondary" style="margin: 0px 26px;"><div class="lazyload-wrapper "><div class="lazyload-placeholder" style="height: 200px;"></div></div></div><div class="secondary" style="margin: 0px 26px;"><div class="lazyload-wrapper "><div class="lazyload-placeholder" style="height: 200px;"></div></div></div><div class="secondary" style="margin: 0px 26px;"><div class="lazyload-wrapper "><div class="lazyload-placeholder" style="height: 200px;"></div></div></div><div class="secondary" style="margin: 0px 26px;"><div class="lazyload-wrapper "><div class="lazyload-placeholder" style="height: 200px;"></div></div></div><div class="secondary" style="margin: 0px 26px;"><div class="lazyload-wrapper "><div class="lazyload-placeholder" style="height: 200px;"></div></div></div><div class="secondary" style="margin: 0px 26px;"><div class="lazyload-wrapper "><div class="lazyload-placeholder" style="height: 200px;"></div></div></div><div class="secondary" style="margin: 0px 26px;"><div class="lazyload-wrapper "><div class="lazyload-placeholder" style="height: 200px;"></div></div></div><div class="secondary" style="margin: 0px 26px;"><div class="lazyload-wrapper "><div class="lazyload-placeholder" style="height: 200px;"></div></div></div></div></div></div></div></div><div class="lazyload-wrapper "><div style="height:200px" class="lazyload-placeholder"></div></div><div class="lazyload-wrapper "><div style="height:200px" class="lazyload-placeholder"></div></div><div class="lazyload-wrapper "><div style="height:200px" class="lazyload-placeholder"></div></div><div class="lazyload-wrapper "><div style="height:200px" class="lazyload-placeholder"></div></div><div class="lazyload-wrapper "><div style="height:200px" class="lazyload-placeholder"></div></div><div class="lazyload-wrapper "><div style="height:200px" class="lazyload-placeholder"></div></div><div class="css-4vofpv"><div class="lazyload-wrapper "><div style="height:200px" class="lazyload-placeholder"></div></div><div class="css-j7qwjs"><div class="lazyload-wrapper "><div style="height:200px" class="lazyload-placeholder"></div></div><div class="lazyload-wrapper "><div style="height:200px" class="lazyload-placeholder"></div></div></div></div><div class="fixed inset-x-0 bottom-0 z-50 block md:hidden"><div class="bg-white"><div class="max-w-7xl mx-auto py-3 px-3 lg:px-8"><div class="flex justify-between"><div class="w-1/3 ml-2"><h4 class="font-semibold">Get Started</h4><p class="text-ms-12">Join the Program</p></div><div class="w-2/3 ml-4 "><a class="chakra-button css-1f4jhq7" id="stickyApply" href="https://onward.masaischool.com/register">APPLY NOW FOR FREE</a></div></div></div></div></div><div class="lazyload-wrapper "><div style="height:200px" class="lazyload-placeholder"></div></div></section><div class="lazyload-wrapper "><div style="height:200px" class="lazyload-placeholder"></div></div></div><script id="__NEXT_DATA__" type="application/json">{"props":{"navbarCourses":[{"__typename":"Course","name":"Full Stack Web Development","description":"Become a job-ready software developer in 30 weeks by studying part-time. Pay us only if you get a job that pays you ₹5,00,000/- Per Year or more!","campus":"online","type":"partTime","durationInWeeks":30,"field":{"__typename":"Field","name":"softwareDeveloper"},"minAge":18,"maxAge":28,"routeName":"full-stack-web-dev-part-time"},{"__typename":"Course","name":"Full Stack Web Development","description":"Become a job-ready software developer in 30 weeks at no upfront fees. Pay us only if you get a job that pays you ₹5,00,000/- per year or more!","campus":"both","type":"fullTime","durationInWeeks":30,"field":{"__typename":"Field","name":"softwareDeveloper"},"minAge":18,"maxAge":28,"routeName":"full-stack-web-dev-full-time"},{"__typename":"Course","name":"Full Stack Android Development","description":"Become a job-ready Android Developer by the end of 30 weeks and pay us when you get a job that pays you ₹5,00,000/- Per Year or more!","campus":"online","type":"partTime","durationInWeeks":30,"field":{"__typename":"Field","name":"softwareDeveloper"},"minAge":18,"maxAge":28,"routeName":"android-part-time"}],"footerCampus":{"__typename":"OfflineCampus","locations":{"__typename":"ComponentOfflineCampusLocationsBanner","locations":[{"__typename":"Location","name":"Pune","image":{"__typename":"UploadFile","name":"Pune 1.svg","url":"https://masai-website-images.s3.ap-south-1.amazonaws.com/Pune_1_2f90ac832d.svg"}},{"__typename":"Location","name":"Patna","image":{"__typename":"UploadFile","name":"Patna.svg","url":"https://masai-website-images.s3.ap-south-1.amazonaws.com/Patna_ef7b6ef471.svg"}},{"__typename":"Location","name":"Bengaluru","image":{"__typename":"UploadFile","name":"Bengaluru 2.svg","url":"https://masai-website-images.s3.ap-south-1.amazonaws.com/Bengaluru_2_b55806014e.svg"}},{"__typename":"Location","name":"Indore","image":{"__typename":"UploadFile","name":"Indore 1.svg","url":"https://masai-website-images.s3.ap-south-1.amazonaws.com/Indore_1_626a322900.svg"}}]}},"pageProps":{"homepage":{"__typename":"Homepage","hero":{"__typename":"ComponentHomeHero","title":"Driven by Outcomes, Fuelled by Ambitions.","preDescription":"Launch your dream career ","description":"at 0 upfront fees.","postDescription":"","studentImages":[{"__typename":"UploadFile","name":"stud-image-desktop-upload.png","url":"https://masai-website-images.s3.ap-south-1.amazonaws.com/stud_image_desktop_upload_793ed2b430.png"},{"__typename":"UploadFile","name":"stud-image-mobile-upload.png","url":"https://masai-website-images.s3.ap-south-1.amazonaws.com/stud_image_mobile_upload_fd443fc682.png"}]},"meetPartners":{"__typename":"ComponentHomeMeetPartners","title":"Have a Dream Company In Mind?","subTitle":"Meet Some Of Our 700+ Hiring Partners","partners":[{"__typename":"Partners","name":"GlobalLogic","url":null,"logo":{"__typename":"UploadFile","name":"globallogic.svg","url":"https://masai-website-images.s3.ap-south-1.amazonaws.com/globallogic_c30eb641f7.svg"}},{"__typename":"Partners","name":"MoneyTap","url":null,"logo":{"__typename":"UploadFile","name":"moneytap.svg","url":"https://masai-website-images.s3.ap-south-1.amazonaws.com/moneytap_d5a6c9d532.svg"}},{"__typename":"Partners","name":"EatFit","url":null,"logo":{"__typename":"UploadFile","name":"eatfit.svg","url":"https://masai-website-images.s3.ap-south-1.amazonaws.com/eatfit_9dc276a187.svg"}},{"__typename":"Partners","name":"Dream11","url":null,"logo":{"__typename":"UploadFile","name":"dream11.svg","url":"https://masai-website-images.s3.ap-south-1.amazonaws.com/dream11_d6c8d97a52.svg"}},{"__typename":"Partners","name":"HomeLane","url":null,"logo":{"__typename":"UploadFile","name":"homelane.svg","url":"https://masai-website-images.s3.ap-south-1.amazonaws.com/homelane_e9cadd0c3c.svg"}},{"__typename":"Partners","name":"UrbanPiper","url":null,"logo":{"__typename":"UploadFile","name":"urbanpiper.svg","url":"https://masai-website-images.s3.ap-south-1.amazonaws.com/urbanpiper_2884348a0b.svg"}},{"__typename":"Partners","name":"Airmeet","url":null,"logo":{"__typename":"UploadFile","name":"airmeet.svg","url":"https://masai-website-images.s3.ap-south-1.amazonaws.com/airmeet_93e45faced.svg"}},{"__typename":"Partners","name":"Paytm","url":null,"logo":{"__typename":"UploadFile","name":"paytm.svg","url":"https://masai-website-images.s3.ap-south-1.amazonaws.com/paytm_a5c1ce2bc6.svg"}},{"__typename":"Partners","name":"WhiteHat Jr","url":null,"logo":{"__typename":"UploadFile","name":"whitehat.svg","url":"https://masai-website-images.s3.ap-south-1.amazonaws.com/whitehat_5a86f1e308.svg"}},{"__typename":"Partners","name":"BharatPe","url":null,"logo":{"__typename":"UploadFile","name":"bharatpe.svg","url":"https://masai-website-images.s3.ap-south-1.amazonaws.com/bharatpe_a3a5a3f552.svg"}},{"__typename":"Partners","name":"Swiggy","url":null,"logo":{"__typename":"UploadFile","name":"swiggy.svg","url":"https://masai-website-images.s3.ap-south-1.amazonaws.com/swiggy_bc1b88842e.svg"}},{"__typename":"Partners","name":"SalesKen","url":null,"logo":{"__typename":"UploadFile","name":"salesken.svg","url":"https://masai-website-images.s3.ap-south-1.amazonaws.com/salesken_baefe048ac.svg"}},{"__typename":"Partners","name":"Vyapar","url":null,"logo":{"__typename":"UploadFile","name":"vyapar.svg","url":"https://masai-website-images.s3.ap-south-1.amazonaws.com/vyapar_3f3770ebb5.svg"}},{"__typename":"Partners","name":"CapGemini","url":null,"logo":{"__typename":"UploadFile","name":"capgemini.svg","url":"https://masai-website-images.s3.ap-south-1.amazonaws.com/capgemini_31a863e94f.svg"}},{"__typename":"Partners","name":"Simplilearn","url":null,"logo":{"__typename":"UploadFile","name":"simplilearn.svg","url":"https://masai-website-images.s3.ap-south-1.amazonaws.com/simplilearn_f8af8de923.svg"}},{"__typename":"Partners","name":"PagarBook","url":null,"logo":{"__typename":"UploadFile","name":"pagarbook.svg","url":"https://masai-website-images.s3.ap-south-1.amazonaws.com/pagarbook_2746958f65.svg"}},{"__typename":"Partners","name":"Smallcase","url":null,"logo":{"__typename":"UploadFile","name":"smallcase.svg","url":"https://masai-website-images.s3.ap-south-1.amazonaws.com/smallcase_1740bcc33f.svg"}},{"__typename":"Partners","name":"BharatAgri","url":null,"logo":{"__typename":"UploadFile","name":"bharatagri.svg","url":"https://masai-website-images.s3.ap-south-1.amazonaws.com/bharatagri_d4794042fe.svg"}},{"__typename":"Partners","name":"ShareChat","url":null,"logo":{"__typename":"UploadFile","name":"sharechat.svg","url":"https://masai-website-images.s3.ap-south-1.amazonaws.com/sharechat_23a9923a34.svg"}},{"__typename":"Partners","name":"LeapFinance","url":null,"logo":{"__typename":"UploadFile","name":"leapfinance.svg","url":"https://masai-website-images.s3.ap-south-1.amazonaws.com/leapfinance_0d785d05eb.svg"}},{"__typename":"Partners","name":"Ola","url":null,"logo":{"__typename":"UploadFile","name":"ola.svg","url":"https://masai-website-images.s3.ap-south-1.amazonaws.com/ola_15b5ee2b82.svg"}},{"__typename":"Partners","name":"IBM","url":null,"logo":{"__typename":"UploadFile","name":"ibm.svg","url":"https://masai-website-images.s3.ap-south-1.amazonaws.com/ibm_795b5429ee.svg"}},{"__typename":"Partners","name":"Byjus","url":null,"logo":{"__typename":"UploadFile","name":"byjus.svg","url":"https://masai-website-images.s3.ap-south-1.amazonaws.com/byjus_e7b97a9c80.svg"}},{"__typename":"Partners","name":"Ajio","url":null,"logo":{"__typename":"UploadFile","name":"ajio.svg","url":"https://masai-website-images.s3.ap-south-1.amazonaws.com/ajio_a16cd7a85b.svg"}}]},"studentTestimonials":[{"__typename":"StudentTestimonial","name":"Lalitha Perumalla","order":13,"education":"B.Tech","picture":{"__typename":"UploadFile","url":"https://masai-website-images.s3.ap-south-1.amazonaws.com/Lalitha_9c1e4f1cab.jpg"},"testimonial":"I left a job at Infosys to learn coding. Masai helped me get 3X more salary in a product-based company.","linkedin":"","role":"Software Developer","companyName":"Ajio","companyLogo":{"__typename":"UploadFile","url":"https://masai-website-images.s3.ap-south-1.amazonaws.com/Ajio_2ba59d62cb.svg"},"companyUrl":""},{"__typename":"StudentTestimonial","name":"Lokesh Nimje","order":12,"education":"BE -Mech","picture":{"__typename":"UploadFile","url":"https://masai-website-images.s3.ap-south-1.amazonaws.com/Lokesh_Nimje_90cfa775e3.jpg"},"testimonial":"Projects are a part of journey at Masai. It gives the opportunity to work in a team, which gives a real experience of the corporate world. This helps students to develop a better understanding and enhances communication skills.","linkedin":null,"role":"Software Engineer","companyName":"MPL","companyLogo":{"__typename":"UploadFile","url":"https://masai-website-images.s3.ap-south-1.amazonaws.com/MPL_7713ca3d5b.svg"},"companyUrl":null},{"__typename":"StudentTestimonial","name":"Aayushi Shah","order":10,"education":"B.Com","picture":{"__typename":"UploadFile","url":"https://masai-website-images.s3.ap-south-1.amazonaws.com/Aayushi_527cd1c2a3.jpg"},"testimonial":"I got placed within 2 days after graduation! I’m happy I am part of the Masai family, not because they helped me but because of their mission to help other lost yet capable students out there.","linkedin":null,"role":"Software Engineer","companyName":"ShareChat","companyLogo":{"__typename":"UploadFile","url":"https://masai-website-images.s3.ap-south-1.amazonaws.com/sharechat_rect_73d95cd4e1.svg"},"companyUrl":null},{"__typename":"StudentTestimonial","name":"Kritika Tripathi","order":11,"education":"B-Tech(CS)","picture":{"__typename":"UploadFile","url":"https://masai-website-images.s3.ap-south-1.amazonaws.com/Kritika_Tripathi_716c47cbbd.jpg"},"testimonial":"Masai brought discipline to my life, helped me develop a coder’s mindset and increase my concentration as well as time management skills. It took me some time, but I got a job of 5 LPA as promised.","linkedin":null,"role":"Frontend Developer","companyName":"InstaMojo","companyLogo":{"__typename":"UploadFile","url":"https://masai-website-images.s3.ap-south-1.amazonaws.com/instamojo_8763e704f7.png"},"companyUrl":null}],"mediaPromo":{"__typename":"ComponentHomeMediaPromo","blueBox":[{"__typename":"ComponentGlobalTextBox","text":"3000+ ","isColored":true,"isUnderlined":false,"isOnNewLine":null},{"__typename":"ComponentGlobalTextBox","text":"Students Currently Enrolled","isColored":false,"isUnderlined":false,"isOnNewLine":null},{"__typename":"ComponentGlobalTextBox","text":"96% ","isColored":true,"isUnderlined":true,"isOnNewLine":true},{"__typename":"ComponentGlobalTextBox","text":"Placement Rate","isColored":false,"isUnderlined":false,"isOnNewLine":null}],"cyanBox":[{"__typename":"ComponentGlobalTextBox","text":"7.5 LPA Average Salary ","isColored":false,"isUnderlined":false,"isOnNewLine":null}],"greenBox":[{"__typename":"ComponentGlobalTextBox","text":"36 LPA Highest Salary","isColored":false,"isUnderlined":false,"isOnNewLine":null}]},"fields":[{"__typename":"Field","id":"1","name":"softwareDeveloper","displayName":"Software Development","description":"\u003cdiv\u003eStart your coding career and become an industry-ready Full Stack Web Developer in India's ever-growing technology job market.\u003c/div\u003e","programCount":2,"timeType":"both"},{"__typename":"Field","id":"2","name":"design","displayName":"Design","description":"\u003cdiv\u003eBecome the catalyst that bridges the interaction between humans and computers by landing job roles in UI Design, UX Design, Product Design among many others.\u003c/div\u003e","programCount":1,"timeType":"partTime"},{"__typename":"Field","id":"5","name":"dataAnalytics","displayName":"Data Analytics","description":"\u003cdiv\u003e\nBreak into the fast-growing field of Data Analytics and launch yourself into a variety of roles like Business Intelligence Analyst, Data Analyst \u0026 Data Scientist among others.\n\u003c/div\u003e\n","programCount":5,"timeType":"partTime"}],"coFounderStory":{"__typename":"ComponentHomeCoFounderStory","title":"\u003cp\u003eA Bridge Between Education and Employment.\u003c/p\u003e","description":"15 lakh engineers graduate in India every year and most of them are unemployed. Mohammed Hassan and Mahesh Pawate were two such engineers who invested a lot of money in their education and secured exceptional grades. Watch to find out what went wrong and how Masai corrected it.","url":"https://www.youtube.com/watch?v=GAdbTqSJ_-o\u0026t=1s"},"instructors":[{"__typename":"Instructor","name":"Sudhir Mor","order":1025,"designation":"Director - Product \u0026 Design","team":"executive","isInstructor":true,"image":{"__typename":"UploadFile","name":"Sudhir Mor.jpg","url":"https://masai-website-images.s3.ap-south-1.amazonaws.com/Sudhir_Mor_f48c892fb5.jpg"},"email":"sudhir@masaischool.com","companyLogo":{"__typename":"UploadFile","name":"ex_soroco.svg","url":"https://masai-website-images.s3.ap-south-1.amazonaws.com/ex_soroco_cea3e0fbfb.svg"},"companyName":"Sorroco"},{"__typename":"Instructor","name":"Albert Sebastian","order":2010,"designation":"Technical Faculty","team":"product_engineering","isInstructor":true,"image":{"__typename":"UploadFile","name":"Albert.jpg","url":"https://masai-website-images.s3.ap-south-1.amazonaws.com/Albert_28b73517f6.jpg"},"email":"albertsebastian@masaischool.com","companyLogo":{"__typename":"UploadFile","name":"ex_realized.jpeg","url":"https://masai-website-images.s3.ap-south-1.amazonaws.com/ex_realized_5d3fee2677.jpeg"},"companyName":"Masai"},{"__typename":"Instructor","name":"Nrupul Dev","order":1005,"designation":"Co-Founder \u0026 C.T.O.","team":"executive","isInstructor":true,"image":{"__typename":"UploadFile","name":"Nrupul.jpg","url":"https://masai-website-images.s3.ap-south-1.amazonaws.com/Nrupul_d3fe3b289a.jpg"},"email":"nrupul@masaischool.com","companyLogo":{"__typename":"UploadFile","name":"ex_da.jpeg","url":"https://masai-website-images.s3.ap-south-1.amazonaws.com/ex_da_557255e025.jpeg"},"companyName":"Digital Aristotle"},{"__typename":"Instructor","name":"Preeti Sheokand","order":1020,"designation":"Director - New Initiatives","team":"executive","isInstructor":true,"image":{"__typename":"UploadFile","name":"Preeti Sheokand.jpg","url":"https://masai-website-images.s3.ap-south-1.amazonaws.com/Preeti_Sheokand_88c996e613.jpg"},"email":"preeti@masaischool.com","companyLogo":{"__typename":"UploadFile","name":"ex_symphony.jpg","url":"https://masai-website-images.s3.ap-south-1.amazonaws.com/ex_symphony_637d605df6.jpg"},"companyName":"SymphonyAI"},{"__typename":"Instructor","name":"Ritesh Firodiya","order":2005,"designation":"Sr. Software Developer","team":"product_engineering","isInstructor":true,"image":{"__typename":"UploadFile","name":"Ritesh Firodiya 4.jpg","url":"https://masai-website-images.s3.ap-south-1.amazonaws.com/Ritesh_Firodiya_4_8a667ac9c8.jpg"},"email":"ritesh.firodiya@masaischool.com","companyLogo":{"__typename":"UploadFile","name":"ex_swiggy.svg","url":"https://masai-website-images.s3.ap-south-1.amazonaws.com/ex_swiggy_9ca86a3f78.svg"},"companyName":"Swiggy"},{"__typename":"Instructor","name":"Arjun Thakur","order":1030,"designation":"Vice President - Learning","team":"executive","isInstructor":true,"image":{"__typename":"UploadFile","name":"Arjun.jpg","url":"https://masai-website-images.s3.ap-south-1.amazonaws.com/Arjun_3848ab5fe7.jpg"},"email":"arjun.thakur@masaischool.com","companyLogo":{"__typename":"UploadFile","name":"2560px-Amazon_logo.svg.png","url":"https://masai-website-images.s3.ap-south-1.amazonaws.com/2560px_Amazon_logo_svg_77deda1bdc.png"},"companyName":"Amazon"},{"__typename":"Instructor","name":"Dhaval Chheda","order":2000,"designation":"Vice President - Engineering","team":"product_engineering","isInstructor":true,"image":{"__typename":"UploadFile","name":"Dhaval Chheda.jpg","url":"https://masai-website-images.s3.ap-south-1.amazonaws.com/Dhaval_Chheda_07091418b2.jpg"},"email":"dhavalchheda@masaischool.com","companyLogo":{"__typename":"UploadFile","name":"en-new-logo@2x.png","url":"https://masai-website-images.s3.ap-south-1.amazonaws.com/en_new_logo_2x_d6f9d34615.png"},"companyName":"Erosnow"},{"__typename":"Instructor","name":"Yogesh Bhat","order":1010,"designation":"Co-Founder \u0026 Sr. Vice President","team":"executive","isInstructor":true,"image":{"__typename":"UploadFile","name":"Yogesh.jpg","url":"https://masai-website-images.s3.ap-south-1.amazonaws.com/Yogesh_52e31f5560.jpg"},"email":"yogesh@masaischool.com","companyLogo":{"__typename":"UploadFile","name":"ex_mercuri.svg","url":"https://masai-website-images.s3.ap-south-1.amazonaws.com/ex_mercuri_129d690457.svg"},"companyName":"Mercuri International"}],"partnerTestimonials":[{"__typename":"PartnerStory","fullName":"Anirban Majumdar","story":"There are many platforms that bolster an individual's \"knowledge\" to show up to work and just do their tasks. But with Masai, it is quite evident that the individuals are given a well-rounded education into the different aspects besides programming that go into software engineering. The college curriculum while focusing on the theoretical aspects of programming hasn't really evolved to keep pace with the practical aspects of software engineering. Companies too can benefit significantly by sourcing developers from Masai as they have good familiarity with the tools and processes that go into building software solutions. The dominant trait amongst Masai graduates has mostly been to focus on gaining more knowledge.","designation":"CTO and Co-Founder","image":{"__typename":"UploadFile","name":"Anirban Majumdar.jpeg","url":"https://masai-website-images.s3.ap-south-1.amazonaws.com/Anirban_Majumdar_e001629fcc.jpeg"},"companyLogo":{"__typename":"UploadFile","name":"urbanpiper_rect.svg","url":"https://masai-website-images.s3.ap-south-1.amazonaws.com/urbanpiper_rect_37c839e35e.svg"},"companyName":"Urban Piper"},{"__typename":"PartnerStory","fullName":"Arya Adarsha Gautam","story":"Masai does a great job of attracting ambitious folk and it shows in the hunger with which the grads chase their own improvement and career advancement. The curriculum is shaped such that its graduates come into the job with with an understanding of workplace and technology practices that is simply missing from freshers hired from colleges. They continuously look for feedback for their curriculum and ensure that it is up to date with the pulse of the ecosystem. All of these have translated into a very smooth hiring experience for us with Masai. Our experience with Masai so far has led me to believe that its graduates would be good fits in startup culture.","designation":"CTO and Co-Founder","image":{"__typename":"UploadFile","name":"Arya Adarsha Gautam.jpeg","url":"https://masai-website-images.s3.ap-south-1.amazonaws.com/Arya_Adarsha_Gautam_a72b51d7b3.jpeg"},"companyLogo":{"__typename":"UploadFile","name":"pagarbook_rect.svg","url":"https://masai-website-images.s3.ap-south-1.amazonaws.com/pagarbook_rect_adcdc345e4.svg"},"companyName":"Pagarbook"},{"__typename":"PartnerStory","fullName":"Vamsee Mohan Kamabathula","story":"We were looking to hire entry-level developers and Masai more than delivered. Our selection rate from Masai's candidates is higher than other avenues of hiring and the process was completed in two days flat. The offer to joining ratio with Masai candidates was 100% which is awesome! The developers had a good foundation of the technologies they need to work with and could hit the ground running. We wholeheartedly recommend Masai to companies looking to hire entry-level developers quickly.","designation":"CTO and Co-Founder","image":{"__typename":"UploadFile","name":"Vamsee Mohan Kamabathula.jpeg","url":"https://masai-website-images.s3.ap-south-1.amazonaws.com/Vamsee_Mohan_Kamabathula_e196f3ab55.jpeg"},"companyLogo":{"__typename":"UploadFile","name":"Qapita.png","url":"https://masai-website-images.s3.ap-south-1.amazonaws.com/Qapita_13fe2db4fb.png"},"companyName":"Qapita Fintech"},{"__typename":"PartnerStory","fullName":"Pradeep Sreeram","story":"Hiring experience with Masai is a wow. All the candidates we interviewed were equally talented, selection wasn't easy. Masai training has made college and background irrelevant because once any student goes through the training the outcome is always good. We have also found that the students are trained even on soft skills, this covers the 360 degree needs of today's corporates or startups. In addition, Masai's one offer per candidate policy ensures students join once the offer is rolled out. Overall, we are confident that Masai is the new destination for quality and timely hiring.","designation":"Engineering Lead","image":{"__typename":"UploadFile","name":"Pradeep Sreeram.jpeg","url":"https://masai-website-images.s3.ap-south-1.amazonaws.com/Pradeep_Sreeram_494522711e.jpeg"},"companyLogo":{"__typename":"UploadFile","name":"eatfit_rect.svg","url":"https://masai-website-images.s3.ap-south-1.amazonaws.com/eatfit_rect_02ec413e66.svg"},"companyName":"Eat.Fit"}],"lifeAtMasai":[{"__typename":"ComponentGlobalLinks","url":"https://twitter.com/Inc42/status/1455817382748897288"},{"__typename":"ComponentGlobalLinks","url":"https://twitter.com/zi__Casey/status/1454832445904150530"},{"__typename":"ComponentGlobalLinks","url":"https://twitter.com/UnitusVentures/status/1453220589385232392"},{"__typename":"ComponentGlobalLinks","url":"https://twitter.com/sinhamadhukar/status/1453260201121943554"},{"__typename":"ComponentGlobalLinks","url":"https://twitter.com/anand_siddharth/status/1453208144495054848"},{"__typename":"ComponentGlobalLinks","url":"https://twitter.com/moneycontrolcom/status/1452888342882754560"},{"__typename":"ComponentGlobalLinks","url":"https://twitter.com/SaritaM25865518/status/1452100980972032002"},{"__typename":"ComponentGlobalLinks","url":"https://twitter.com/abheychoubey12/status/1450528923448610820"},{"__typename":"ComponentGlobalLinks","url":"https://twitter.com/masaischool/status/1449952692202131459"},{"__typename":"ComponentGlobalLinks","url":"https://twitter.com/KushagraKamal1/status/1449051935277924357"},{"__typename":"ComponentGlobalLinks","url":"https://twitter.com/SrivastavChhavi/status/1448221995292774400"},{"__typename":"ComponentGlobalLinks","url":"https://twitter.com/em_jae_17/status/1443846666553942016"}]}},"apolloState":{},"apollo":null,"__N_SSG":true},"page":"/","query":{},"buildId":"A8TPyB5amvfWBCzQzeL0X","isFallback":false,"gsp":true,"appGip":true,"scriptLoader":[]}</script><script id="clevertap_script" data-nscript="afterInteractive">var clevertap = {event:[], profile:[], account:[], onUserLogin:[], notifications:[], privacy:[]};
+          // replace with the CLEVERTAP_ACCOUNT_ID with the actual ACCOUNT ID value from your Dashboard -> Settings page
+          clevertap.account.push({"id": "4WK-R84-WK6Z"});
+          clevertap.privacy.push({optOut: false}); //set the flag to true, if the user of the device opts out of sharing their data
+          clevertap.privacy.push({useIP: false}); //set the flag to true, if the user agrees to share their IP data
+          (function () {
+                  var wzrk = document.createElement('script');
+                  wzrk.type = 'text/javascript';
+                  wzrk.async = true;
+                  wzrk.src = 'https://d2r1yp2w7bby2u.cloudfront.net';
+                  // wzrk.src = ('https:' == document.location.protocol ? 'https://d2r1yp2w7bby2u.cloudfront.net' : 'http://static.clevertap.com') + '/js/a.js?v=0';
+                  console.log(wzrk.src)
+                  var s = document.getElementsByTagName('script')[0];
+                  s.parentNode.insertBefore(wzrk, s);
+          })();</script><script src="https://cdn.jsdelivr.net/npm/clevertap-web-sdk/clevertap.min.js" type="text/javascript" async="true" data-nscript="afterInteractive"></script><script id="gtag" data-nscript="afterInteractive">(function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-PTP9WCB");</script><script id="fb" data-nscript="afterInteractive">!function(f,b,e,v,n,t,s)
+      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+      n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t,s)}(window, document,'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init', '764403070840928');
+      fbq('track', 'PageView');</script><script id="sharechat" data-nscript="afterInteractive">(function (w, d, s, l, i) 
+        {w['scSdkId'] = i;
+        w[l] = w[l] || [];
+        w.scq = function (eventName, eventType, p) 
+        {var props = p || {};
+        w[l].push({ eventName: eventName, eventType: eventType, meta: props, eventFireTs: Date.now() })};
+        w.scq("PAGE_VIEW", "AUTO", {pageUrl: w.location.href});
+        var scr = d.createElement(s);
+        scr.type = 'text/javascript';
+        scr.async = true;
+        scr.src = 'https://sc-events-sdk.sharechat.com/web-sdk.js';
+        var x = d.getElementsByTagName(s)[0];x.parentNode.insertBefore(scr, x);})(window, document, "script", "scLayer", "2tAOG3FDcI");</script><script id="taboola" data-nscript="afterInteractive">window._tfa = window._tfa || [];window._tfa.push({notify: 'event', name: 'page_view', id: 1405079});!function (t, f, a, x) {if (!document.getElementById(x)) {t.async = 1;t.src = a;t.id=x;f.parentNode.insertBefore(t, f);}}(document.createElement('script'),document.getElementsByTagName('script')[0],'//cdn.taboola.com/libtrc/unip/1405079/tfa.js','tb_tfa_script');</script><script id="quora" data-nscript="afterInteractive">!(function (q, e, v, n, t, s) {
+        if (q.qp) return;
+        n = q.qp = function () {
+          n.qp ? n.qp.apply(n, arguments) : n.queue.push(arguments);
+        };
+        n.queue = [];
+        t = document.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = document.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      })(window, "script", "https://a.quora.com/qevents.js");
+      qp("init", "e89039014f384f06865f8691d852b8ac");
+      qp("track", "ViewContent");</script><next-route-announcer><p aria-live="assertive" id="__next-route-announcer__" role="alert" style="border: 0px; clip: rect(0px, 0px, 0px, 0px); height: 1px; margin: -1px; overflow: hidden; padding: 0px; position: absolute; width: 1px; white-space: nowrap; overflow-wrap: normal;"></p></next-route-announcer><script type="text/javascript" id="">(function(a,c,f,d,b){a.scSdkId=b;a[d]=a[d]||[];a.scq=function(g,h,e){e=e||{};a[d].push({eventName:g,eventType:h,meta:e,eventFireTs:Date.now()})};a.scq("PAGE_VIEW","AUTO",{pageUrl:a.location.href});b=c.createElement(f);b.type="text/javascript";b.async=!0;b.src="https://sc-events-sdk.sharechat.com/web-sdk.js";c=c.getElementsByTagName(f)[0];c.parentNode.insertBefore(b,c)})(window,document,"script","scLayer","2tAOG3FDcI");</script><script src="/_next/static/chunks/819-466f382927b46ed9.js"></script><script src="/_next/static/chunks/4-f0aa1f6dc4cb9710.js"></script><script src="/_next/static/chunks/582-cf8e5abef83758d0.js"></script><script src="/_next/static/chunks/483-c29b4633e27e5c24.js"></script><script src="/_next/static/chunks/pages/courses/%5BrouteName%5D-7187c6997edd378d.js"></script><script src="/_next/static/chunks/pages/faq-786bbbd4c88c4b08.js"></script><script src="/_next/static/chunks/196-71bd1f69c8d0c319.js"></script><script src="/_next/static/chunks/pages/hire-masai-grads-65d6be17ece4d4fc.js"></script><script src="/_next/static/chunks/pages/about-4d1c995de9523b79.js"></script><script src="/_next/static/chunks/pages/fees-fbe5bc069c7f3572.js"></script><div id="chakra-toast-portal"><ul id="chakra-toast-manager-top" style="position: fixed; z-index: 5500; pointer-events: none; display: flex; flex-direction: column; margin: 0px auto; top: env(safe-area-inset-top, 0px); right: env(safe-area-inset-right, 0px); left: env(safe-area-inset-left, 0px);"></ul><ul id="chakra-toast-manager-top-left" style="position: fixed; z-index: 5500; pointer-events: none; display: flex; flex-direction: column; top: env(safe-area-inset-top, 0px); left: env(safe-area-inset-left, 0px);"></ul><ul id="chakra-toast-manager-top-right" style="position: fixed; z-index: 5500; pointer-events: none; display: flex; flex-direction: column; top: env(safe-area-inset-top, 0px); right: env(safe-area-inset-right, 0px);"></ul><ul id="chakra-toast-manager-bottom-left" style="position: fixed; z-index: 5500; pointer-events: none; display: flex; flex-direction: column; bottom: env(safe-area-inset-bottom, 0px); left: env(safe-area-inset-left, 0px);"></ul><ul id="chakra-toast-manager-bottom" style="position: fixed; z-index: 5500; pointer-events: none; display: flex; flex-direction: column; margin: 0px auto; bottom: env(safe-area-inset-bottom, 0px); right: env(safe-area-inset-right, 0px); left: env(safe-area-inset-left, 0px);"></ul><ul id="chakra-toast-manager-bottom-right" style="position: fixed; z-index: 5500; pointer-events: none; display: flex; flex-direction: column; bottom: env(safe-area-inset-bottom, 0px); right: env(safe-area-inset-right, 0px);"></ul></div><iframe name="_hjRemoteVarsFrame" title="_hjRemoteVarsFrame" id="_hjRemoteVarsFrame" src="https://vars.hotjar.com/box-a1ae2079824d1c48aa9ce06efb256f18.html" style="display: none !important; width: 1px !important; height: 1px !important; opacity: 0 !important; pointer-events: none !important;"></iframe></body>
+</html>
