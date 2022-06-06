@@ -1,12 +1,14 @@
 import React from "react";
-import { Products } from "../components/Products"
+import Products from "../components/Products/Products";
+
 const Home = () => {
-  return <div style={{
-    maxWidth:"1080px",
-    margin:"auto",
-  }}>{
-    <Products/>
-  }</div>;
+  return (
+    <div>
+      {/* Code here */}
+      Home
+      <Products/>
+    </div>
+  );
 };
 
 export default Home;

@@ -1,26 +1,22 @@
+import { Route, Routes } from "react-router-dom";
 import "./App.css";
-import { Route,Routes} from "react-router-dom";
+import Navbar from "./components/Navbar/Navbar";
 import RequiredAuth from "./hoc/RequiredAuth";
-import Home from "./pages/Home";
-import Login from "./pages/Login";
-import { Navbar } from "./components/Navbar";
+import Home from './pages/Home'
+import Login from './pages/Login'
 
 function App() {
   return (
     <div className="App">
-      <Navbar />
-      <Routes>
-          <Route path="login" element={<Login/>}/>
-          <Route 
-          path=""
-          element={
-            <RequiredAuth>
-              <Home/>
-            </RequiredAuth>
-          }
-          />
-      </Routes>
- 
+      
+      {/* { */}
+        {/* Code here */}
+        <Navbar />
+        <Routes>
+          <Route path='/' element={<RequiredAuth><Home/></RequiredAuth>}/>
+          <Route path='/login' element={<Login/>}/>
+        </Routes>
+      {/* } */}
     </div>
   );
 }
