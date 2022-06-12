@@ -2,9 +2,8 @@ import {
   Button,
   Heading,
   Input,
-  Text,
-  Toast,
-  useToast,
+
+  
 } from "@chakra-ui/react";
 import React, { useEffect, useRef, useState } from "react";
 
@@ -23,7 +22,7 @@ const Timer = () => {
 
   const startTimer = (e) => {
     let { total, hours, minutes, seconds } = getTimeRemaining(e);
-    // console.log(total);
+
     if (total >= 0) {
       setTimer(
         (hours > 9 ? hours : "0" + hours) +
@@ -50,7 +49,7 @@ const Timer = () => {
   const getDeadTime = () => {
     let deadline = new Date();
     deadline.setSeconds(deadline.getSeconds() + Number(val));
-    // console.log(deadline);
+
     return deadline;
   };
 
@@ -62,7 +61,8 @@ const Timer = () => {
     clearTimer(getDeadTime());
     handleBtn(!btn);
   };
-  const toast = useToast();
+
+
 
   const [btn, handleBtn] = useState(false);
 
@@ -74,13 +74,13 @@ const Timer = () => {
     <div>
       <Heading size="2xl">Timer</Heading>
       <br />
-      <Heading as="h5" size="xl">Your Entered Time In Seconds : {val} </Heading>
+      <Heading as="h5" size="xxl" color="red">Enterd Time In Seconds : {val} </Heading>
       <Input
         value={val}
         onChange={handleChange}
         color="teal"
         placeholder="Enter time in seconds"
-        _placeholder={{ color: "teal" }}
+        _placeholder={{ color: "black" }}
         textAlign="center"
         fontSize="xl"
       />
@@ -88,24 +88,12 @@ const Timer = () => {
       <br />
       <Heading>{timer}</Heading>
       <br />
-      <Button colorScheme="red" onClick={onClickReset}>
+      <Button colorScheme="blue" onClick={onClickReset}>
         {btn ? "Reset" : "Start"}
       </Button>
       <br />
       <br />
-      <Button
-        onClick={() =>
-          toast({
-            title: "Timer Developed By",
-            description: "Prajwal Jaiswal WEB-17 Masai School",
-            status: "success",
-            duration: 9000,
-            isClosable: true,
-          })
-        }
-      >
-        Show Credits
-      </Button>
+      
     </div>
   );
 };

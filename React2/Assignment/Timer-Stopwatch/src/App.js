@@ -6,8 +6,8 @@ import Timer from "./components/Timer";
 function App() {
   return (
     <div className="App">
-      <Tabs isFitted variant="enclosed">
-        <TabList mb="1em">
+      <Tabs >
+        <TabList>
           <Tab><Heading>Timer</Heading></Tab>
           <Tab><Heading>Stopwatch</Heading></Tab>
         </TabList>

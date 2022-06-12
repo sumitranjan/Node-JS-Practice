@@ -1,3 +1,39 @@
 {
-    "abcd": 1234
+  "todos": [
+    {
+      "id": 1,
+      "text": "Todo 1",
+      "isCompleted": true
+    },
+    {
+      "id": 2,
+      "text": "Todo 2",
+      "isCompleted": false
+    },
+    {
+      "id": 3,
+      "text": "Todo 3",
+      "isCompleted": false
+    },
+    {
+      "text": "abc",
+      "isCompleted": false,
+      "id": 4
+    },
+    {
+      "text": "efg",
+      "isCompleted": false,
+      "id": 5
+    },
+    {
+      "text": "",
+      "isCompleted": false,
+      "id": 6
+    },
+    {
+      "text": "fg",
+      "isCompleted": false,
+      "id": 7
+    }
+  ]
 }

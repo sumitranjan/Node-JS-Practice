@@ -1,4 +1,4 @@
-import { Button, Heading, Toast, useToast } from "@chakra-ui/react";
+import { Button, Heading } from "@chakra-ui/react";
 import React from "react";
 
 const DisplayStopwatch = (props) => {
@@ -12,7 +12,7 @@ const DisplayStopwatch = (props) => {
       );
     }
   };
-  
+
   return (
     <div>
       <Heading>
@@ -27,7 +27,6 @@ const DisplayStopwatch = (props) => {
         &nbsp;&nbsp;
         <span>{props.time.ms >= 10 ? props.time.ms : "0" + props.time.ms}</span>
       </Heading>
-      
     </div>
   );
 };

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import DisplayStopwatch from "./DisplayStopwatch";
-import ButtonStopwatch from "./ButtonStopwatch";
+import ButtonStopwatch from "./StopwatchButton";
 import "../App.css";
 import { Heading } from "@chakra-ui/react";
 
