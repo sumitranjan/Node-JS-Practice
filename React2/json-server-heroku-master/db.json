@@ -1,0 +1,17 @@
+{
+   
+"allhome": [
+        {"name": "PUMA SPORTS" ,"type": "Puma gray shirt", "price": 1100, "image":"https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/10945122/2021/12/14/78f009f3-cc9b-4c32-bdc0-64f123adafc61639482743454RoadsterMenGreenRegularFitSolidCasualShirt1.jpg"},
+        
+        {"name": "Levis Kurti" ,"type": "Levis white Kurti","price": 750, "image":"https://img.ssensemedia.com/images/b_white,c_lpad,g_center,h_1412,w_940/c_scale,h_960/f_auto,dpr_1.0/221470M192003_1/edward-cuming-off-white-viscose-shirt.jpg"},
+        
+        
+        {"name": "Adidas" ,"type": "Black slim kurti", "price": 370, "image":"https://m.media-amazon.com/images/I/61WoVgma7sL._UY550_.jpg"},
+    
+        {"name": "SOLID TOP" ,"type": "Black Wool Midi Dress", "price": 1655, "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBNLY96S0i_zLBk8HBwc_dP6oM7NqU5LM5cg&usqp=CAU"},
+    
+        {"name": "Reebock Shirt" ,"type": "Gray Rebook shirt", "price": 1250, "image":"https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/1667044/2019/2/28/2781f021-536a-44ca-bc83-42c456bca95f1551335771557-Roadster-Men-Navy--Grey-Checked-Casual-Shirt-341551335769426-1.jpg"}
+        
+       
+    ]
+}
