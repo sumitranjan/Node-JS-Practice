@@ -8,7 +8,7 @@
 
 //node --version
 //npm --version 
-//nmp is uded for installing third party package/Modules
+//nmp is used for installing third party package/Modules
 
 //nmp init
 //npm install package-name =>> to install the package in system

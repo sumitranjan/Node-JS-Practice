@@ -1,26 +1,23 @@
 //Custome slideshow
 
-function storeImages(){
+function storeImages() {
+  let img = document.getElementById("url").value;
 
-    let img = document.getElementById('url').value;
+  //array of object
 
-    //array of object
+  let images = localStorage.getItem("images");
+  console.log("images", images);
 
-    let images = localStorage.getItem('images');
-    console.log('images',images)
+  if (images === null) {
+    images = [];
+  }
+  //there is already data in localstorage
+  else {
+    images = JSON.parse(localStorage.getItem("images"));
+  }
+  images.push(img);
 
-    if(images === null){
-        images = [];
-    }
-    //there is already data in localstorage
-    else{
-        images = JSON.parse(localStorage.getItem('images'));
-    }
-    images.push(img)
-
-    localStorage.setItem('images',JSON.stringify(images))
- 
-
+  localStorage.setItem("images", JSON.stringify(images));
 }
 
 //Image URL
