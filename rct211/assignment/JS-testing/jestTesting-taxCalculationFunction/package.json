@@ -1,0 +1,14 @@
+{
+  "name": "tax-calculator",
+  "version": "1.0.0",
+  "description": "testing for my tax calculation function",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Prajwal jaiswal",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^28.1.2"
+  }
+}
