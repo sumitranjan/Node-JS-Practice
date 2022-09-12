@@ -5,7 +5,7 @@ const Restaurants = () => {
     <div className="container divider">
             <div className="cards">
                 <div className="card">
-                    <img width="254" height="160px" src="assets/restaurant1.jpeg" />
+                    <img width="254" height="160px" src="assets/restaurant1.jpeg" alt="img logo"/>
                     <div className="restaurant-details">
                         <div className="restaurant-title">Chaitanya Parathas</div>
                         <div className="restaurant-subtitle">North India, Punjabi, Chinese, Thalis Combo, Beverages </div>
@@ -23,7 +23,7 @@ const Restaurants = () => {
                     </div>
                 </div>
                 <div className="card">
-                    <img width="254" height="160px" src="assets/restaurant2.jpeg" />
+                    <img width="254" height="160px" src="assets/restaurant2.jpeg" alt="img logo"/>
                     <div className="restaurant-details">
                         <div className="restaurant-title">MH 12 Pav Bhaji</div>
                         <div className="restaurant-subtitle">Snacks, Pizza, Beverages, Steet Food</div>
@@ -41,7 +41,7 @@ const Restaurants = () => {
                     </div>
                 </div>
                 <div className="card">
-                    <img width="254" height="160px" src="assets/restaurant3.jpeg" />
+                    <img width="254" height="160px" src="assets/restaurant3.jpeg" alt="img logo"/>
                     <div className="restaurant-details">
                         <div className="restaurant-title">Lunch Box</div>
                         <div className="restaurant-subtitle">North India, Punjabi, Combo, Biryani, Healthy Food, Jain, Thalis </div>
@@ -59,7 +59,7 @@ const Restaurants = () => {
                     </div>
                 </div>
                 <div className="card">
-                    <img width="254" height="160px" src="assets/restaurant4.jpeg" />
+                    <img width="254" height="160px" src="assets/restaurant4.jpeg" alt="img logo"/>
                     <div className="restaurant-details">
                         <div className="restaurant-title">The Hungry Hippe</div>
                         <div className="restaurant-subtitle">Chinese, Italian, Thai</div>
@@ -79,7 +79,7 @@ const Restaurants = () => {
                     </div>
                 </div>
                 <div className="card">
-                    <img width="254" height="160px" src="assets/restaurant5.jpeg" />
+                    <img width="254" height="160px" src="assets/restaurant5.jpeg" alt="img logo"/>
                     <div className="restaurant-details">
                         <div className="restaurant-title">Ovenstory Pizzas</div>
                         <div className="restaurant-subtitle">Pizzas</div>
@@ -97,7 +97,7 @@ const Restaurants = () => {
                     </div>
                 </div>
                 <div className="card">
-                    <img width="254" height="160px" src="assets/restaurant6.jpeg" />
+                    <img width="254" height="160px" src="assets/restaurant6.jpeg" alt="img logo"/>
                     <div className="restaurant-details">
                         <div className="restaurant-title">Starbucks Coffee</div>
                         <div className="restaurant-subtitle">Beverages, Ice Cream</div>
@@ -115,7 +115,7 @@ const Restaurants = () => {
                     </div>
                 </div>
                 <div className="card">
-                    <img width="254" height="160px" src="assets/restaurant7.jpeg" />
+                    <img width="254" height="160px" src="assets/restaurant7.jpeg" alt="img logo"/>
                     <div className="restaurant-details">
                         <div className="restaurant-title">Starbucks Coffee</div>
                         <div className="restaurant-subtitle">Beverages, Ice Cream</div>

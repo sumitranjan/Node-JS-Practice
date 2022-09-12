@@ -15,8 +15,10 @@ const TodoInput = ({ addTodo }) => {
       />
       <button
         onClick={() => {
+          console.log(value)
           addTodo(value);
           setValue("");
+        
         }}
       >
         Add

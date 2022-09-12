@@ -5,22 +5,25 @@ import TodoItem from "./TodoItem";
 import TodoList from "./TodoList";
 
 const Todo = () => {
-  const [todos, setTodos] = useState([]);
-
+  const [todo, setTodo] = useState([]);
   const addTodo = (newTodo) => {
-    setTodos([...todos, newTodo]);
+    setTodo([...todo, newTodo]);
   };
   const deleteTodo = (value) => {
-    setTodos(todos.filter((todo) => todo !== value));
+    setTodo(todo.filter((todo) => todo !== value));
   };
   return (
     <div>
-      Todo
+      TodoApp
       <TodoInput addTodo={addTodo} />
-      <TodoList value={Date.now()} />
-      {todos.map((todo) => (
-        <TodoItem key={todo} value={todo} deleteTodo={deleteTodo} />
-      ))}
+    {console.log(todo)}
+      <TodoList>
+        <div value={Date.now()}>
+          {todo.map((todo) => (
+            <TodoItem key={todo} value={todo} deleteTodo={deleteTodo} />
+          ))}
+        </div>
+      </TodoList>
     </div>
   );
 };

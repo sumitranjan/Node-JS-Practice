@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react'
 
 const Mobile = () => {
   const data = [
@@ -11,21 +11,16 @@ const Mobile = () => {
       item: ["Samsung", "HTC", "Micromax", "Apple"],
     },
   ];
-  console.log(data);
   return (
     <div>
-      {data.map((e) => (
-        <div>
-          <h1 key={e.heading}>{e.heading}</h1>
-          <ul style={{width:"200px", margin:"auto"}}>
-            {e.item.map((i) => (
-              <li>{i}</li>
-            ))}
-          </ul>
-        </div>
+      {data.map((data)=>(
+        <div><h1>{data.heading}</h1>
+        <p>{data.item.map((item)=>(
+          <li>{item}</li>
+        ))}</p></div>
       ))}
     </div>
-  );
-};
+  )
+}
 
-export default Mobile;
+export default Mobile

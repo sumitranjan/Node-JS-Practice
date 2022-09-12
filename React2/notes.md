@@ -80,3 +80,17 @@ A: is a hook in react used to create and update state variable.
 Q: Why we need key listing?
 A: 
 ---
+
+
+  //hooks use useState
+  //hooks are set of inbuild react functions used to interact with VDOM
+
+  //usestate is a hook in React
+  //useState is used to inform VDOM of the changes that need to be rendered
+  //which is used to inform VDOM of the changes that needs to be rendered
+
+  //it returns 2 things in an array
+  //variable and a function to update that variable
+
+  //state
+  //state is a info that is changing on DOM

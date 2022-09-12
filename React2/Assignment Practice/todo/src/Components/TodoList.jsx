@@ -1,12 +1,12 @@
-import React from 'react'
+import React from "react";
 
-const TodoList = ({children}) => {
+const TodoList = ({ children }) => {
   return (
     <div>
-        <h1>Todo List : </h1>
-        <ul>{children}</ul>
+      <h1>Here is your TODO List</h1>
+      <ul>{children}</ul>
     </div>
-  )
-}
+  );
+};
 
-export default TodoList
+export default TodoList;

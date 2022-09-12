@@ -9,10 +9,10 @@ const Offers = () => {
   return (
     <section className="offers">
       <div className="container">
-        <img className="offer" src={offer1} />
-        <img className="offer" src={offer2} />
-        <img className="offer" src={offer3} />
-        <img className="offer" src={offer4} />
+        <img className="offer" src={offer1} alt="offer logo" />
+        <img className="offer" src={offer2} alt="offer logo" />
+        <img className="offer" src={offer3} alt="offer logo" />
+        <img className="offer" src={offer4} alt="offer logo" />
       </div>
     </section>
   );
