@@ -1,0 +1,29 @@
+{
+  "todos": [
+    {
+      "id": 1,
+      "title": "Learn Redux",
+      "status": false
+    },
+    {
+      "title": "Learn JS",
+      "status": false,
+      "id": 2
+    },
+    {
+      "title": "Learn React",
+      "status": false,
+      "id": 3
+    },
+    {
+      "title": "Learn HTML",
+      "status": false,
+      "id": 4
+    },
+    {
+      "title": "Learn git",
+      "status": false,
+      "id": 5
+    }
+  ]
+}
