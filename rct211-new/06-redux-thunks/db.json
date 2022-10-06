@@ -24,6 +24,16 @@
       "title": "Learn git",
       "status": false,
       "id": 5
+    },
+    {
+      "title": "Learn TypeScript",
+      "status": false,
+      "id": 6
+    },
+    {
+      "title": "Learn TypeScript",
+      "status": false,
+      "id": 7
     }
   ]
 }
