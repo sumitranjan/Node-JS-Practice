@@ -13,7 +13,7 @@ const logger1 = (store) => (next) => (action) => {
   //refers to the next middleware, if there is any , else the reducer function
   console.log("Inside logger 1-a");
   const temp = next(action);
-  next(action);
+  next(action); 
   console.log("After logger 1-b", temp);
   return temp;
 };

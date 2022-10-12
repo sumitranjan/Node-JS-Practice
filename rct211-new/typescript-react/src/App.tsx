@@ -4,7 +4,6 @@ import Counter from './Components/Counter';
 import Todos from './Components/Todos';
 
 
-
 function App() {
   return (
     <div className="App">

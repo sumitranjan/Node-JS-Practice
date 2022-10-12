@@ -12,11 +12,13 @@
 4. Use the useDispatch hook inside the App.js file to update the count data.
 
 ## UseSelector
+
         - help us ACCESS the data inside our Redux store.
         - has access to the redux store state.
         - multiple use selector can be used.
         - subscribe logic is handled by useSelector itself.
         - useSelector compare old value and new value
+        - useSelctor check ===
 
 ## useDispatch -
 
@@ -29,9 +31,10 @@
 4. Refactor db.json file, to access todos
 5. Also, create Todos.jsx and TodoInput.jsx
 
+## shallowEqual
 
-## shallowEqual 
         - Goes only one level deep inside the objects
-## deepEqual
-        - Goes to the last element(howebver nested it is) inside the object
 
+## deepEqual
+
+        - Goes to the last element(however nested it is) inside the object

@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { store } from "./Redux/store";
+import { handleAddActionObj, handleReduceActionObj } from "./Redux/action";
 import "./App.css";
 
 function App() {
@@ -18,18 +19,18 @@ function App() {
     console.log("State inside redux has changed", store.getState());
 
     //just for re-rendering
-    //this is telling react that some state has 
+    //this is telling react that some state has
     //changed and you need to re-render this component.
-    setUpdate((prev) => prev + 1); 
+    setUpdate((prev) => prev + 1);
   });
 
-  const handleAdd = () => {
-    dispatch({ type: "ADD", payload: 1 });
-  };
+  // const handleAdd = () => {
+  //   dispatch(handleAddActionObj({ type: "ADD", payload: 1 }));
+  // };
 
-  const handleReduce = () => {
-    dispatch({ type: "REDUCE", payload: 1 });
-  };
+  // const handleReduce = () => {
+  //   dispatch(handleReduceActionObj({ type: "REDUCE", payload: 1 }));
+  // };
 
   useEffect(() => {}, [count]);
 
@@ -39,8 +40,8 @@ function App() {
       {/* <button onClick={() => setCount((prev) => prev + 1)}>Add</button>
       <button onClick={() => setCount((prev) => prev - 1)}>Reduce</button> */}
 
-      <button onClick={handleAdd}>Add</button>
-      <button onClick={handleReduce}>Reduce</button>
+      <button onClick={()=>dispatch(handleAddActionObj(2))}>Add</button>
+      <button onClick={()=>dispatch(handleReduceActionObj(1))}>Reduce</button>
     </div>
   );
 }
