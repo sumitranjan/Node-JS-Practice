@@ -1,5 +1,6 @@
 import { useEffect } from "react";
-import { useState } from "react";
+import { useState, useRef } from "react";
+import styles from "./form.module.css"
 
 function Form() {
   const [form, setForm] = useState({
@@ -11,7 +12,8 @@ function Form() {
     // file: "",
     // city: "bengalore",
   });
-
+  const nameRef = useRef();
+  const passRef = useRef();
   const handleChange = (e) => {
     let { type, name, value, checked, files } = e.target;
     // console.log(type, name, value, checked);
@@ -33,8 +35,14 @@ function Form() {
     }
   };
 
-  const handleOnSubmit = () =>{
-    
+  const handleOnSubmit = (e) =>{
+    e.preventDefault();
+    console.log(form);
+    if(!form.username) {
+      nameRef.current.focus();
+      nameRef.current.className(styles.redBorder)
+    }
+    else if (!form.password) passRef.current.focus()
   }
   //   useEffect(() => {
   //     console.log(form);
@@ -47,6 +55,7 @@ function Form() {
           <label>Name : </label>
           <input
             type="text"
+            ref={nameRef}
             name="username"
             placeholder="Enter name..."
             //we can remove value maping , if default value is not passed
@@ -87,6 +96,7 @@ function Form() {
           <label>Password : </label>
           <input
             type="text"
+            ref={passRef}
             name="password"
             placeholder="Enter password..."
             // value={form.password}
