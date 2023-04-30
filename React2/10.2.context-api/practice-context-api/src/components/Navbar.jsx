@@ -1,9 +1,8 @@
-import React from "react";
-import { useContext } from "react";
-import { AuthContext } from "../context/AuthContext";
-import { ThemeContext } from "../context/ThemeContext";
+import React, { useContext } from "react";
 import WishList from "./WishList";
-import { CartContext } from "../context/CartContext";
+import { AuthContext } from "../context/AuthContext";
+import { CartContext } from "../context/CartContex";
+import { ThemeContext } from "../context/ThemeContext";
 
 const Navbar = () => {
   const { isAuthorized, login, logout } = useContext(AuthContext);
@@ -15,7 +14,7 @@ const Navbar = () => {
       Navbar
       <button
         onClick={() => {
-          isAuthorized ? logout() : login("S", "R");
+          isAuthorized ? logout() : login("Sumit", "1234");
         }}
       >
         {isAuthorized ? "Logout" : "Login"}
