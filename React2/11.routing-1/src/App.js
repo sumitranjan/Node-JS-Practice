@@ -13,8 +13,13 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
-        <Route path="/products" element={<Products />} />
-        <Route path="/product/:id" element={<Product />} />
+        {/* <Route path="/products" element={<Products />} />
+        <Route path="/products/:id" element={<Product />} /> */}
+
+        {/* Nesting Route */}
+        <Route path="products/*" element={<Products />}>
+          <Route path=":id" element={<Product />} />
+        </Route>
       </Routes>
     </div>
   );
